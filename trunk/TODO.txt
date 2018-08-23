@@ -1,0 +1,29 @@
+- Input
+	- Input Parser
+		- Needs to throw exceptions when there are errors in the file
+		- Needs to parse in Disables and Hinders relationships
+	- Configuration Parser
+		- Needs to not write a new file if one isn't present (completed by Stefan)
+
+- Output
+	- Need to output a log of all events
+	- Need to print some events to the screen during simulation
+
+- Tasktree
+	- Relationships need to be looked at again (they don't quite seem to follow the ctaems spec)
+
+- Simulation
+	- Messages
+		- Need a start simulation message (completed by Stefan)
+		- Need an end simulation message (completed by Stefan)
+		- Maybe need a new type of message to send initial tree data to each agent
+		- Maybe need a new type of message to indicate that a new tick has started (completed by Stefan)
+	- Simulator
+		- Need to activate relationships
+		- Need to send initial tree to agents
+		- Need to send other new types of messages
+		- Need to use logger
+
+- Tests
+	- Need to figure out why the ServerListenThread tests randomly fail
+	- Input Parser needs better tests

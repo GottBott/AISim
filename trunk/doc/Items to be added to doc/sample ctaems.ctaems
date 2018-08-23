@@ -1,0 +1,65 @@
+;; Comment. Sample CTAEMS file.
+(spec_version "VERSION_NUMBER")
+;; Agent specification
+(spec_agent
+	(label AGENT1_NAME)
+)
+(spec_agent
+	(label AGENT2_NAME)
+)
+;; More Agents as needed
+;; Tasks
+(spec_task_group
+	(label TASK_GROUP1_NAME)
+	(subtasks SUBTASK1_NAME SUBTASK2_NAME) ;; More Subtasks as needed
+	(qaf QAF)
+)
+(spec_task
+	(label SUBTASK1_NAME)
+	(earliest_start_time EARLIEST_START)
+	(deadline DEADLINE)
+	(subtasks METHOD1_NAME) ;; More Subtasks or Methods as needed
+	(qaf QAF)
+)
+(spec_task
+	(label SUBTASK2_NAME)
+	(earliest_start_time EARLIEST_START)
+	(deadline DEADLINE)
+	(subtasks METHOD2_NAME)
+	(qaf QAF)
+)
+(spec_method
+	(label METHOD1_NAME)
+	(agent AGENT1_NAME)
+	(outcomes
+		(METHOD1_NAME_OUTCOME_0
+			(density DENSITY)
+			(quality_distribution QUALITY1 PROBABILITY1 QUALITY2 PROBABLITY2) ;; More Qualities as needed
+			(duration_distribution DURATION1 PROBABILITY1 DURATION2 PROBABILITY2) ;; More Durations as needed
+	)
+)
+(spec_method
+	(label METHOD2_NAME)
+	(agent AGENT2_NAME)
+	(outcomes
+		(METHOD2_NAME_OUTCOME_0
+			(density DENSITY)
+			(quality_distribution QUALITY1 PROBABILITY1 QUALITY2 PROBABLITY2) ;; More Qualities as needed
+			(duration_distribution DURATION1 PROBABILITY1 DURATION2 PROBABILITY2) ;; More Durations as needed
+	)
+)
+;; More Methods, Tasks, and Task Groups as needed
+;; Relationships
+(spec_ENABLES_DISABLES
+	(label RELATIONSHIP1_NAME)
+	(from TASK1_NAME)
+	(to TASK2_NAME)
+)
+(spec_FACILITATES_HINDERS
+	(label RELATIONSHIP2_NAME)
+	(from TASK1_NAME)
+	(to METHOD2_NAME)
+	(quality NEW_QUALITY)
+	(duration NEW_DURATION)
+)
+;; More Relationships as needed

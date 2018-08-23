@@ -1,0 +1,254 @@
+CISC 475 Project
+Multi-Agent System Simulation
+Fall 2014
+
+Build our project by running ant.
+
+To run our project, use this command:
+
+	java -jar AIsim.jar [INPUT]
+
+		INPUT - Optional - The location of the .ctaems file to run.
+
+Three test scenarios are included in (release)/runFiles. They are:
+	
+	Test1: 
+		Test1.ctaems (Tests basic functionality with one task and method) 
+		Test1.py (a sample agent that requires user input)
+		
+	Test2:
+		Test2.ctaems ( Tests the use of multiple agents )
+		(The 4 tests below test each kind of relationship) 
+		TestDisables.ctaems
+		TestEnables.ctaems
+		TestFacilitates.ctaems
+		TestHinders.ctaems
+		Test2_1.py (a sample agent that runs automatically and describes what it's doing)
+		Test2_2.py (a sample agent that runs automatically and describes what it's doing)
+		
+	Test3:
+		Test3.ctaems (Uses newtaems tokens to dynamically add new tasks & relationships to the running simulation)
+		Test3.py (a sample agent that runs automatically and describes what it's doing)
+
+There's also a sample config.ini that you can use to modify the settings (pull this into the same directory as the jar).
+
+Running this will start up a simulation. First, a server will start and listen for agents to connect. Run the corresponding python scripts to create a connection to the server. The first script has a few options of messages to send to the simulator. Send the Registration message first to tell the server which agent you are. Next, send the AskMethodStatus message. This message will ask the simulator the status of Method1. In return, the simulator will send a response. Finally, you can send the MethodStartMessage to try and start Method1. The simulator will reply saying whether or not you are allowed to start (it will say yes). Then it will wait to correct number of ticks and tell you it finished. Finally, the simulator will close since the only completable method is now finished.
+
+The second test scenario will run automatically and give some feedback as to what it's doing. Both agents must be run for the simulation to even start. The scripts will wait until their last method has been completed before exiting so be patient, they will finish (config.ini can be edited to lower the tick length).
+
+You can view the output in the generated logs folder.
+
+Agent Guide:
+When making an Agent you should have your program connect to the Simulation and send an AgentRegistrationMessage. After connection is complete you will receive a SetRandomSeedMessage that will give your Agent the correct random seed to enable repeatability. After that your Agent will get a InitialTreeMessage which contains all the information your Agent knows about the scenario. Finally your Agent will get a StartSimulationMessage when the Simulation has started. Now your Agent can start Methods using the StartMethodMessage. Your Agent is free to send AgentToAgentMessages to other Agents at any time. This is the only way Agents can communicate with each other. Your Agent will receive a NextTickMessage every time a new tick is started. Agents are also able to ask the status of a method that is visible to them. A Method status could be running, not running, or completed.
+
+AgentRegistration
+
+{	
+	"MessageType":"AgentRegistrationMessage",
+ 	"Message":{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME"
+ 	}
+}
+
+AskMethodStatus
+
+{	
+	"MessageType":"AskMethodStatusMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME"
+ 	}
+}
+
+ConfirmMethodStart
+
+{
+	"MessageType":"ConfirmMethodStartMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Started":BOOLEAN
+ 	}
+}
+
+InitalTreeMessage
+
+{
+	"MessageType":"InitialTreeMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Nodes":[(TASK|METHOD)+],
+ 		"Relationships":[(FACILITATES|HINDERS|ENABLES|DISABLES)*]
+ 	}
+}
+	TASK
+	{
+		"NodeType":"Task",
+		"NodeName":"NODENAME",
+		"QAF":"TASKQAF",
+		"EarlisetStartTime":"EARLIESTSTARTTIME",
+		"Deadline":"DEADLINE",
+		"VisibleToAgents":["AGENTNAME"+],
+		"SubTasks":["SUBTASKNAME"*]
+	}
+	METHOD
+	{
+		"NodeType":"Method",
+		"NodeName":"NODENAME",
+		"AgentName":"AGENTNAME",
+		"Quality":DOUBLE,
+		"Duration":INTEGER,
+		"VisibleToAgents":["AGENTNAME"+]
+	}
+	FACILITATES | HINDERS
+	{
+		"RelationshipType":"Facilitates" | "Hinders",
+		"RelationshipName":"RELATIONSHIPNAME",
+		"Source":"SOURCENAME",
+		"Destination":"DESTINATIONNAME",
+		"VisibleToAgents":["AGENTNAME"+],
+		"QualityFactor":DOUBLE,
+		"DurationFactor":DOUBLE
+	}
+	ENABLES | DISABLES
+	{
+		"RelationshipType":"Enables" | "Disables",
+		"RelationshipName":"RELATIONSHIPNAME",
+		"Source":"SOURCENAME",
+		"Destination":"DESTINATIONNAME",
+		"VisibleToAgents":["AGENTNAME"+]
+	}
+
+NotifyMethodCompleted
+
+{
+	"MessageType":"NotifyMethodCompletedMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Quality":DOUBLE,
+ 		"Duration":INTEGER
+ 	}
+}
+
+NotifyMethodStatus
+
+{
+	"MessageType":"NotifyMethodStatusMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Started":BOOLEAN,
+ 		"Completed":BOOLEAN,
+ 		"Enabled":BOOLEAN
+ 	}
+}
+
+NotifyRelationshipActivation
+
+{
+	"MessageType":"NotifyRelationshipActivationMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"RelationshipName":"RELATIONSHIPNAME"
+ 	}
+}
+
+SetRandomSeed
+
+{
+	"MessageType":"SetRandomSeedMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Seed":LONG
+ 	}
+}
+
+StartMethod
+
+{
+	"MessageType":"StartMethodMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName:"METHODNAME"
+ 	}
+}
+
+UpdateTreeMessage
+
+{
+	"MessageType":"UpdateTreeMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Nodes":[(TASK|METHOD)+],
+ 		"Relationships":[(FACILITATES|HINDERS|ENABLES|DISABLES)*]
+ 	}
+}
+	TASK
+	{
+		"NodeType":"Task",
+		"NodeName":"NODENAME",
+		"QAF":"TASKQAF",
+		"EarlisetStartTime":"EARLIESTSTARTTIME",
+		"Deadline":"DEADLINE",
+		"VisibleToAgents":["AGENTNAME"+],
+		"SubTasks":["SUBTASKNAME"*]
+	}
+	METHOD
+	{
+		"NodeType":"Method",
+		"NodeName":"NODENAME",
+		"AgentName":"AGENTNAME",
+		"Quality":DOUBLE,
+		"Duration":INTEGER,
+		"VisibleToAgents":["AGENTNAME"+]
+	}
+	FACILITATES | HINDERS
+	{
+		"RelationshipType":"Facilitates" | "Hinders",
+		"RelationshipName":"RELATIONSHIPNAME",
+		"Source":"SOURCENAME",
+		"Destination":"DESTINATIONNAME",
+		"VisibleToAgents":["AGENTNAME"+],
+		"QualityFactor":DOUBLE,
+		"DurationFactor":DOUBLE
+	}
+	ENABLES | DISABLES
+	{
+		"RelationshipType":"Enables" | "Disables",
+		"RelationshipName":"RELATIONSHIPNAME",
+		"Source":"SOURCENAME",
+		"Destination":"DESTINATIONNAME",
+		"VisibleToAgents":["AGENTNAME"+]
+	}
+
+AgentToAgent
+
+{
+	"MessageType":"AgentToAgentMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Content":JSONOBJECT
+ 	}
+}

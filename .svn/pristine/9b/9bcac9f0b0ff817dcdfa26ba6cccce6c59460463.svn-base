@@ -1,0 +1,28 @@
+CISC 475 Project
+Multi-Agent System Simulation
+Fall 2014
+
+Build our project by running ant.
+
+To run our project, use this command:
+
+	java -jar AIsim.jar [INPUT]
+
+		INPUT - Optional - The location of the .ctaems file to run.
+
+Two test scenarios are included in (release)/runFiles. They are:
+	Test1:
+		Test1.ctaems
+		Test1.py (a sample agent that requires user input)
+	Test2:
+		Test2.ctaems
+		Test2_1.py (a sample agent that runs automatically and describes what it's doing)
+		Test2_2.py (a sample agent that runs atuomatically and describes what it's doing)
+
+There's also a sample config.ini that you can use to mess around with the settings (pull this into the same directory as the jar).
+
+Running this will start up a simulation. First, a server will start and listen for agents to connect. Run the corrisponding python scripts to create a connection to the server. The first script has a few options of messages to send to the simulator. Send the Registration message first to tell the server which agent you are. Next, send the AskMethodStatus message. This message will ask the simulator the status of Method1. In return, the simulator will send a response. Finally, you can send the MethodStartMessage to try and start Method1. The simulator will reply saying whether or not you are allowed to start (it will say yes). Then it will wait to correct number of ticks and tell you it finished. Finally, the simulator will close since the only completable method is now finished.
+
+The second test scenario will run automatically and give some feedback as to what it's doing. Both agents must be run for the simulation to even start. The scripts will wait until their last method has been completed before exiting so be patient, they will finish (you can edit config.ini to lower the tick length if you want).
+
+You can view the output in the generated logs folder.

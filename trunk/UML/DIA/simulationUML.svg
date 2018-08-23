@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="82cm" height="53cm" viewBox="-146 -218 1624 1041" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="508.58" y="134.304" width="325.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="508.58" y="134.304" width="325.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="671.43" y="154.304">Message</text>
+    <rect style="fill: #ffffff" x="508.58" y="162.304" width="325.7" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="508.58" y="162.304" width="325.7" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="175.504">+SIMULATOR_NAME: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="191.504">#senderName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="207.504">#destinationName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="223.504">+messageType: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="239.504">+logMessageDetail: String</text>
+    <rect style="fill: #ffffff" x="508.58" y="246.304" width="325.7" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="508.58" y="246.304" width="325.7" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="259.504">+getMessageFromJSON(JSON:String): Message</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="511.58" y="275.504">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="170.954" y="-38.5218" width="225.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.954" y="-38.5218" width="225.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="283.929" y="-18.5218">AgentRegistrationMessage</text>
+    <rect style="fill: #ffffff" x="170.954" y="-10.5218" width="225.95" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.954" y="-10.5218" width="225.95" height="8"/>
+    <rect style="fill: #ffffff" x="170.954" y="-2.5218" width="225.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="170.954" y="-2.5218" width="225.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="173.954" y="10.6782">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="237.692" y="-132.127" width="220.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="237.692" y="-132.127" width="220.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="347.942" y="-112.127">AskMethodStatusMessage</text>
+    <rect style="fill: #ffffff" x="237.692" y="-104.127" width="220.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="237.692" y="-104.127" width="220.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="240.692" y="-90.927">-methodName: String</text>
+    <rect style="fill: #ffffff" x="237.692" y="-84.127" width="220.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="237.692" y="-84.127" width="220.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="240.692" y="-70.927">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-93.0894" y="-105.843" width="244.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-93.0894" y="-105.843" width="244.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="28.9606" y="-85.8428">ConfirmMethodStartMessage</text>
+    <rect style="fill: #ffffff" x="-93.0894" y="-77.8428" width="244.1" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-93.0894" y="-77.8428" width="244.1" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-90.0894" y="-64.6428">-methodName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-90.0894" y="-48.6428">-started: boolean</text>
+    <rect style="fill: #ffffff" x="-93.0894" y="-41.8428" width="244.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-93.0894" y="-41.8428" width="244.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-90.0894" y="-28.6428">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="573.174" y="-194.257" width="196.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.174" y="-194.257" width="196.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="671.274" y="-174.257">EndSimulationMessage</text>
+    <rect style="fill: #ffffff" x="573.174" y="-166.257" width="196.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.174" y="-166.257" width="196.2" height="8"/>
+    <rect style="fill: #ffffff" x="573.174" y="-158.257" width="196.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.174" y="-158.257" width="196.2" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="576.174" y="-145.057">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="936.086" y="153.62" width="541.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="936.086" y="153.62" width="541.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1206.74" y="173.62">InitialTreeMessage</text>
+    <rect style="fill: #ffffff" x="936.086" y="181.62" width="541.3" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="936.086" y="181.62" width="541.3" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="194.82">-tree: TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="210.82">-agent: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="226.82">-nodeArray: JSONArray</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="242.82">-relationshipArray: JSONArray</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="258.82">-writtenRelationships: HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="274.82">-writtenNodes: HashSet&lt;String&gt;</text>
+    <rect style="fill: #ffffff" x="936.086" y="281.62" width="541.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="936.086" y="281.62" width="541.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="294.82">+toJSON(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="310.82">-nodeToJSON(node:Node): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="939.086" y="326.82">-relationshipsToJSON(relationships:ArrayList&lt;NodeRelationship&gt;): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="500.39" y="-90.3574" width="150.35" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="500.39" y="-90.3574" width="150.35" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="575.565" y="-70.3574">NextTickMessage</text>
+    <rect style="fill: #ffffff" x="500.39" y="-62.3574" width="150.35" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="500.39" y="-62.3574" width="150.35" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="503.39" y="-49.1574">-tick: long</text>
+    <rect style="fill: #ffffff" x="500.39" y="-42.3574" width="150.35" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="500.39" y="-42.3574" width="150.35" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="503.39" y="-29.1574">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="983.508" y="39.7868" width="275.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.508" y="39.7868" width="275.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1121.31" y="59.7868">NotifyMethodCompletedMessage</text>
+    <rect style="fill: #ffffff" x="983.508" y="67.7868" width="275.6" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.508" y="67.7868" width="275.6" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.508" y="80.9868">-methodName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.508" y="96.9868">-quality: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.508" y="112.987">-duration: double</text>
+    <rect style="fill: #ffffff" x="983.508" y="119.787" width="275.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.508" y="119.787" width="275.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.508" y="132.987">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="983.332" y="-137.77" width="220.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.332" y="-137.77" width="220.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1093.58" y="-117.77">AskMethodStatusMessage</text>
+    <rect style="fill: #ffffff" x="983.332" y="-109.77" width="220.5" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.332" y="-109.77" width="220.5" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.332" y="-96.5696">-methodName: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.332" y="-80.5696">-inProgress: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.332" y="-64.5696">-completed: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.332" y="-48.5696">-enabled: boolean</text>
+    <rect style="fill: #ffffff" x="983.332" y="-41.7696" width="220.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="983.332" y="-41.7696" width="220.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="986.332" y="-28.5696">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="790.694" y="-216.25" width="310.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="790.694" y="-216.25" width="310.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="945.944" y="-196.25">NotifyRelationshipActivationMessage</text>
+    <rect style="fill: #ffffff" x="790.694" y="-188.25" width="310.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="790.694" y="-188.25" width="310.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="793.694" y="-175.05">-reliatonshipName: String</text>
+    <rect style="fill: #ffffff" x="790.694" y="-168.25" width="310.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="790.694" y="-168.25" width="310.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="793.694" y="-155.05">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="184.796" y="61.6964" width="211.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="184.796" y="61.6964" width="211.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="290.596" y="81.6964">SetRandomSeedMessage</text>
+    <rect style="fill: #ffffff" x="184.796" y="89.6964" width="211.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="184.796" y="89.6964" width="211.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="187.796" y="102.896">-seed: long</text>
+    <rect style="fill: #ffffff" x="184.796" y="109.696" width="211.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="184.796" y="109.696" width="211.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="187.796" y="122.896">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="710.47" y="40.4588" width="180.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710.47" y="40.4588" width="180.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="800.52" y="60.4588">StartMethodMessage</text>
+    <rect style="fill: #ffffff" x="710.47" y="68.4588" width="180.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710.47" y="68.4588" width="180.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713.47" y="81.6588">-methodName: String</text>
+    <rect style="fill: #ffffff" x="710.47" y="88.4588" width="180.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710.47" y="88.4588" width="180.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713.47" y="101.659">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="702.428" y="-126.279" width="206.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="702.428" y="-126.279" width="206.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="805.453" y="-106.279">StartSimulationMessage</text>
+    <rect style="fill: #ffffff" x="702.428" y="-98.2792" width="206.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="702.428" y="-98.2792" width="206.05" height="8"/>
+    <rect style="fill: #ffffff" x="702.428" y="-90.2792" width="206.05" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="702.428" y="-90.2792" width="206.05" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="705.428" y="-77.0792">+toJSON(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-144.344" y="143.802" width="541.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-144.344" y="143.802" width="541.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="126.306" y="163.802">UpdateTreeMessage</text>
+    <rect style="fill: #ffffff" x="-144.344" y="171.802" width="541.3" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-144.344" y="171.802" width="541.3" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="185.002">-tree: TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="201.002">-agent: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="217.002">-nodeArray: JSONArray</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="233.002">-relationshipArray: JSONArray</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="249.002">-writtenRelationships: HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="265.002">-writtenNodes: HashSet&lt;String&gt;</text>
+    <rect style="fill: #ffffff" x="-144.344" y="271.802" width="541.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-144.344" y="271.802" width="541.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="285.002">+toJSON(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="301.002">-nodeToJSON(node:Node): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-141.344" y="317.002">-relationshipsToJSON(relationships:ArrayList&lt;NodeRelationship&gt;): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="503.776" y="380.482" width="333.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="503.776" y="380.482" width="333.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="670.476" y="400.482">ServerCommunicateThread</text>
+    <rect style="fill: #ffffff" x="503.776" y="408.482" width="333.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="503.776" y="408.482" width="333.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="421.682">-QUEUE_SIZE: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="437.682">-agents: HashMap&lt;String, Agent&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="453.682">-simulationRunning: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="469.682">-inBoundQueue: ArrayBlockingQueue&lt;Message&gt;</text>
+    <rect style="fill: #ffffff" x="503.776" y="476.482" width="333.4" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="503.776" y="476.482" width="333.4" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="489.682">+run(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="505.682">+endSimulation(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="506.776" y="521.682">+handleMessage(message:Message): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="499.748" y="690.174" width="348.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="499.748" y="690.174" width="348.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="674.148" y="710.174">ServerListenThread</text>
+    <rect style="fill: #ffffff" x="499.748" y="718.174" width="348.8" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="499.748" y="718.174" width="348.8" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="731.374">-port: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="747.374">-serverSocket: ServerSocket</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="763.374">-agents: HashMap&lt;String, Agent&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="779.374">-agentsToWaitFor: HashSet&lt;String&gt;</text>
+    <rect style="fill: #ffffff" x="499.748" y="786.174" width="348.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="499.748" y="786.174" width="348.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="799.374">+run(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="502.748" y="815.374">-extractNameFromJSON(String:JSONMsg): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="672.19" y="589.944" width="182.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="672.19" y="589.944" width="182.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="763.215" y="609.944">ServerErrorException</text>
+    <rect style="fill: #ffffff" x="672.19" y="617.944" width="182.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="672.19" y="617.944" width="182.05" height="8"/>
+    <rect style="fill: #ffffff" x="672.19" y="625.944" width="182.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="672.19" y="625.944" width="182.05" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="561.19" y="591.944" width="66.15" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561.19" y="591.944" width="66.15" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="594.265" y="611.944">Thread</text>
+    <rect style="fill: #ffffff" x="561.19" y="619.944" width="66.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561.19" y="619.944" width="66.15" height="8"/>
+    <rect style="fill: #ffffff" x="561.19" y="627.944" width="66.15" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561.19" y="627.944" width="66.15" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="900.02" y="589.944" width="157.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="900.02" y="589.944" width="157.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="978.77" y="609.944">RuntimeException</text>
+    <rect style="fill: #ffffff" x="900.02" y="617.944" width="157.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="900.02" y="617.944" width="157.5" height="8"/>
+    <rect style="fill: #ffffff" x="900.02" y="625.944" width="157.5" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="900.02" y="625.944" width="157.5" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="880.774,611.944 882.01,611.944 856.246,611.944 855.246,611.944 "/>
+    <polygon style="fill: #ffffff" points="880.774,619.944 896.774,611.944 880.774,603.944 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="880.774,619.944 896.774,611.944 880.774,603.944 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="594.265,572.702 594.265,552.215 670.476,552.215 670.476,529.491 "/>
+    <polygon style="fill: #ffffff" points="586.265,572.702 594.265,588.702 602.265,572.702 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="586.265,572.702 594.265,588.702 602.265,572.702 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="594.265,655.186 594.265,671.058 674.148,671.058 674.148,689.166 "/>
+    <polygon style="fill: #ffffff" points="602.265,655.186 594.265,639.186 586.265,655.186 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="602.265,655.186 594.265,639.186 586.265,655.186 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="670.476,529.491 670.476,555.215 763.215,555.215 763.215,582.233 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="758.215,569.586 763.215,585.586 768.215,569.586 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="716.846" y="551.215">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="674.148,689.166 674.148,666.058 763.215,666.058 763.215,641.655 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="768.215,654.302 763.215,638.302 758.215,654.302 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="718.682" y="662.058">uses</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1072.04" y="468.838" width="294.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1072.04" y="468.838" width="294.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1219.49" y="488.838">Agent</text>
+    <rect style="fill: #ffffff" x="1072.04" y="496.838" width="294.9" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1072.04" y="496.838" width="294.9" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="510.038">-name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="526.038">-socket: Socket</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="542.038">-outputWriter: PrintWriter</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="558.038">-inputReader: BufferedReader</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="574.038">-visibleTree: TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="590.038">-messagesSent: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="606.038">-messagesReceived: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="622.038">-methodsCompleted: LinkedList&lt;Method&gt;</text>
+    <rect style="fill: #ffffff" x="1072.04" y="628.838" width="294.9" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1072.04" y="628.838" width="294.9" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="642.038">+write(String:output): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="658.038">+read(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="674.038">+hasNextMessage(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="690.038">+close(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1075.04" y="706.038">+addCompletedMethod(m:Method): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="58.647" y="414.542" width="310.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58.647" y="414.542" width="310.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="213.797" y="434.542">Simulator</text>
+    <rect style="fill: #ffffff" x="58.647" y="442.542" width="310.3" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58.647" y="442.542" width="310.3" height="196"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="455.742">-tick: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="471.742">-tickLength: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="487.742">-seed: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="503.742">-port: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="519.742">-agents: HashMap&lt;String, Agent&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="535.742">-agentNames: HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="551.742">-commThread: ServerCommunicateThread</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="567.742">-runningMethods: ArrayList&lt;Method&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="583.742">-tree: TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="599.742">-serverSocket: ServerSocket</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="615.742">-orderedLogger: OrderedLogger</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="631.742">-sequentialLogger: SequentialLogger</text>
+    <rect style="fill: #ffffff" x="58.647" y="638.542" width="310.3" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="58.647" y="638.542" width="310.3" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="651.742">+startServer(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="667.742">-prepareSimulation(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="683.742">-sendInitialData(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="699.742">-startSimulation(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="715.742">-printResults(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="731.742">-replyToAllMessages(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="747.742">-replayToMessage(message:Message): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="61.647" y="763.742">-handleFinsihedMethods(): void</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="837.176,486.482 950.609,486.482 950.609,506.838 1065.34,506.838 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1052.69,511.838 1068.69,506.838 1052.69,501.838 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="952.609" y="492.66">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="848.548,704.174 964.072,704.174 964.072,702.838 1065.34,702.838 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1052.69,707.838 1068.69,702.838 1052.69,697.838 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="966.072" y="699.506">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="368.948,428.542 430.948,428.542 430.948,434.482 497.071,434.482 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="484.423,439.482 500.423,434.482 484.423,429.482 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.948" y="427.512">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="368.947,744.542 430.348,744.542 430.348,744.174 493.043,744.174 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="480.395,749.174 496.395,744.174 480.395,739.174 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="432.348" y="740.358">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="670.476,380.482 670.476,335.393 671.43,335.393 671.43,289.009 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="676.43,301.656 671.43,285.656 666.43,301.656 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="670.953" y="331.393">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,-14.9735 945.944,-14.9735 945.944,-147.241 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,208.304 916.805,208.304 916.805,-79.7696 982.325,-79.7696 "/>
+    <polygon style="fill: #ffffff" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,24.0112 805.453,24.0112 805.453,-69.2721 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,208.304 916.892,208.304 916.892,89.7868 982.5,89.7868 "/>
+    <polygon style="fill: #ffffff" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,208.304 444.489,208.304 444.489,95.6964 397.402,95.6964 "/>
+    <polygon style="fill: #ffffff" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,74.4588 709.464,74.4588 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,47.9728 575.565,47.9728 575.565,-21.3489 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,-9.97774 671.274,-9.97774 671.274,-137.25 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,208.304 475.387,208.304 475.387,-98.127 459.199,-98.127 "/>
+    <polygon style="fill: #ffffff" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,48.2284 28.9606,48.2284 28.9606,-20.8376 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,208.304 444.743,208.304 444.743,-10.5218 397.911,-10.5218 "/>
+    <polygon style="fill: #ffffff" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,208.304 893.181,208.304 893.181,243.62 935.078,243.62 "/>
+    <polygon style="fill: #ffffff" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="853.521,200.304 837.521,208.304 853.521,216.304 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,208.304 444.77,208.304 444.77,233.802 397.964,233.802 "/>
+    <polygon style="fill: #ffffff" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="489.339,216.304 505.339,208.304 489.339,200.304 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="853.01" y="383.844" width="80" height="80"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="853.01" y="383.844" width="80" height="80"/>
+    <rect style="fill: #ffffff" x="853.01" y="363.844" width="65.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="853.01" y="363.844" width="65.6" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="855.01" y="377.844">org.json</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="671.43,283.313 671.43,319.075 893.01,319.075 893.01,356.131 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="888.01,343.484 893.01,359.484 898.01,343.484 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="782.22" y="315.075">uses</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1218.66" y="-138.25" width="193.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1218.66" y="-138.25" width="193.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1315.63" y="-118.25">AgentToAgentMessage</text>
+    <rect style="fill: #ffffff" x="1218.66" y="-110.25" width="193.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1218.66" y="-110.25" width="193.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1221.66" y="-97.05">-content: JSONObject</text>
+    <rect style="fill: #ffffff" x="1218.66" y="-90.25" width="193.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1218.66" y="-90.25" width="193.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1221.66" y="-77.05">+toJSON(): String</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="671.43,115.058 671.43,24.0265 1315.63,24.0265 1315.63,-69.2415 "/>
+    <polygon style="fill: #ffffff" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="663.43,115.058 671.43,131.058 679.43,115.058 "/>
+  </g>
+</svg>

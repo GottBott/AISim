@@ -1,0 +1,40 @@
+####### Ordered Logger #######
+
+
+Final Duration: 79.0
+Final Quality: 80.0
+Seed: 50865536
+
+##### Method Results #####
+
+
+    ## Method ##
+        Name: m1
+        Completed By : Agent_1
+        With Quality : 20.0
+        With Duration: 10
+
+
+    ## Method ##
+        Name: m9
+        Completed By : Agent_1
+        With Quality : 40.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: m6
+        Completed By : Agent_1
+        With Quality : 20.0
+        With Duration: 20
+
+##### Relationship Results #####
+
+##### Agent Results #####
+
+
+    ## Agent ##
+        Name Agent_1
+        Sent: 12
+        Received: 98
+        Completed: m1, m9, m6

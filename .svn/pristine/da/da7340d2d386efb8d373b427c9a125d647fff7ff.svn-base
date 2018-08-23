@@ -1,0 +1,52 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Detailed System Description}{10}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{detailedSystemDescription}{{5}{10}{Detailed System Description}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Design overview}{10}{section.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Uses diagram for packages within MASS.}}{10}{figure.5.1}}
+\newlabel{fig:UsesDiagram }{{5.1}{10}{Uses diagram for packages within MASS}{figure.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Package Overview}{10}{section.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Detailed Package Design}{11}{section.5.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Uses diagram for the package tasktree}}{12}{figure.5.2}}
+\newlabel{fig:tasktree}{{5.2}{12}{Uses diagram for the package tasktree}{figure.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces UML diagram for input package}}{13}{figure.5.3}}
+\newlabel{fig:input}{{5.3}{13}{UML diagram for input package}{figure.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces UML diagram for output package}}{13}{figure.5.4}}
+\newlabel{fig:output}{{5.4}{13}{UML diagram for output package}{figure.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces UML diagram for Simulation package}}{14}{figure.5.5}}
+\newlabel{fig:Simulation}{{5.5}{14}{UML diagram for Simulation package}{figure.5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces UML diagram for tasktree package}}{16}{figure.5.6}}
+\newlabel{fig:TaskTreeUML}{{5.6}{16}{UML diagram for tasktree package}{figure.5.6}{}}
+\@setckpt{detailedSystemDescription}{
+\setcounter{page}{18}
+\setcounter{equation}{0}
+\setcounter{enumi}{5}
+\setcounter{enumii}{1}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{0}
+\setcounter{pp@next@reset}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{parentequation}{0}
+\setcounter{Item}{42}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{20}
+\setcounter{example}{0}
+\setcounter{proof}{0}
+\setcounter{section@level}{1}
+}

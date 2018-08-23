@@ -1,0 +1,140 @@
+AgentRegistration
+
+{	
+	"MessageType":"AgentRegistrationMessage",
+ 	"Message":{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME"
+ 	}
+}
+
+AskMethodStatus
+
+{	
+	"MessageType":"AskMethodStatusMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME"
+ 	}
+}
+
+ConfirmMethodStart
+
+{
+	"MessageType":"ConfirmMethodStartMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Started":BOOLEAN
+ 	}
+}
+
+NewNodeMessage
+
+{
+	"MessageType":"NewNodeMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Node":
+ 		{
+ 			"NodeType":"Task_OR_Method",
+ 			"NodeName":"NODENAME",
+ 			"Relationships":
+ 			[
+ 				{
+ 					"RelationshipName":"RELATIONSHIPNAME",
+ 					"Source":"SOURCENAME",
+ 					"Destination":"DESTINATIONNAME",
+ 					"RelationshipType":"Disables_OR_Enables_OR_Facilitates_OR_Hinders",
+ 					if Facilitates OR Hinders
+ 						"NewQuality":DOUBLE,
+ 						"NewDuration":INTEGER
+ 				},
+ 				...
+ 			]
+ 			if Task
+ 				"QAF":"QAFVALUE",
+ 				"EarliestStartTime":INTEGER,
+ 				"Deadline":INTEGER,
+ 				"SubTasks":
+ 				[
+ 					{NODE},
+ 					...
+ 				]
+ 			if Method
+ 				"Quality":DOUBLE,
+ 				"Duration":INTEGER,
+ 		}
+ 	}
+}
+
+NotifyMethodCompleted
+
+{
+	"MessageType":"NotifyMethodCompletedMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Quality":DOUBLE,
+ 		"Duration":INTEGER
+ 	}
+}
+
+NotifyMethodStatus
+
+{
+	"MessageType":"NotifyMethodStatusMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName":"METHODNAME",
+ 		"Started":BOOLEAN,
+ 		"Completed":BOOLEAN,
+ 		"Enabled":BOOLEAN
+ 	}
+}
+
+NotifyRelationshipActivation
+
+{
+	"MessageType":"NotifyRelationshipActivationMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"RelationshipName":"RELATIONSHIPNAME"
+ 	}
+}
+
+SetRandomSeed
+
+{
+	"MessageType":"SetRandomSeedMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"Seed":LONG
+ 	}
+}
+
+StartMethod
+
+{
+	"MessageType":"StartMethodMessage",
+ 	"Message":
+ 	{
+ 		"MsgSender":"SENDERNAME",
+ 		"MsgDest":"DESTNAME",
+ 		"MethodName:"METHODNAME"
+ 	}
+}

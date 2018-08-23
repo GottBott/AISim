@@ -1,0 +1,2311 @@
+####### Sequential Logger #######
+
+
+
+    ## Message ##
+        Sending a SetRandomSeedMessage to Agent_2
+        The random seed is 97517705
+
+
+    ## Message ##
+        Sending a SetRandomSeedMessage to Agent_3
+        The random seed is 97517705
+
+
+    ## Message ##
+        Sending a SetRandomSeedMessage to Agent_4
+        The random seed is 97517705
+
+
+    ## Message ##
+        Sending a SetRandomSeedMessage to Agent_1
+        The random seed is 97517705
+
+
+    ## Message ##
+        Sending a InitialTreeMessage to Agent_2
+        Tree Head: Problem1
+
+
+    ## Message ##
+        Sending a InitialTreeMessage to Agent_3
+        Tree Head: Problem1
+
+
+    ## Message ##
+        Sending a InitialTreeMessage to Agent_4
+        Tree Head: Problem1
+
+
+    ## Message ##
+        Sending a InitialTreeMessage to Agent_1
+        Tree Head: Problem1
+
+
+    ## Message ##
+        Sending a StartSimulationMessage to Agent_2
+        The Simulation has Started
+
+
+    ## Message ##
+        Sending a StartSimulationMessage to Agent_3
+        The Simulation has Started
+
+
+    ## Message ##
+        Sending a StartSimulationMessage to Agent_4
+        The Simulation has Started
+
+
+    ## Message ##
+        Sending a StartSimulationMessage to Agent_1
+        The Simulation has Started
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 1 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 1 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 1 has occurred
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_1
+        Asked Status of t4-m1
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 1 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":1,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_1
+        t4-m1 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 2 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 2 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 2 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 2 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_1
+        Agent_1 has asked to start t4-m1
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_4
+        Asked Status of t1-m4
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_4
+        Asked Status of t2-m4
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_4
+        Asked Status of t3-m4
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_4
+        Asked Status of t4-m4
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_2
+        Asked Status of t1-m2
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_2
+        Asked Status of t2-m2
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_2
+        Asked Status of t3-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 3 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 3 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 3 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 3 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"}}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_1
+        t4-m1 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_2
+        Asked Status of t4-m2
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_4
+        t1-m4 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_3
+        Asked Status of t1-m3
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_3
+        Asked Status of t2-m3
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_3
+        Asked Status of t3-m3
+
+
+    ## Message ##
+        Received a AskMethodStatusMessage From Agent_3
+        Asked Status of t4-m3
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_4
+        t2-m4 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_4
+        t3-m4 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_4
+        t4-m4 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t3-m2"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_2
+        t1-m2 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_2
+        t2-m2 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_2
+        t3-m2 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 4 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 4 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 4 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 4 has occurred
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_2
+        t4-m2 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"}}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Plan","Plan":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"}}
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_3
+        t1-m3 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_3
+        t2-m3 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_3
+        t3-m3 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Sending a NotifyMethodStatusMessage to Agent_3
+        t4-m3 is Enabled: true Compleated: false In Progress: false
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_2
+        Agent_2 has asked to start t4-m2
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_4
+        Agent_4 has asked to start t4-m4
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 5 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 5 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 5 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 5 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_2
+        t4-m2 has started: true
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_4
+        t4-m4 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_1","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(20.0,0.5),(20.0,0.25),(20.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_1"],"NodeName":"t4-m1"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_3
+        Agent_3 has asked to start t4-m3
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_4
+        Agent_4 has asked to abort t4-m4
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 6 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 6 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 6 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 6 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_3
+        t4-m3 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t4-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_4
+        t4-m4 aborted: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_3
+        Agent_3 has asked to abort t4-m3
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 7 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 7 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 7 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 7 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_2
+        Agent_2 has asked to abort t4-m2
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t4-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_2
+        Agent_2 has asked to abort t4-m2
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_3
+        t4-m3 aborted: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_4
+        Agent_4 has asked to start t1-m4
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_2
+        Agent_2 has asked to abort t4-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 8 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 8 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 8 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 8 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":4,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","Duration":"(200.0,0.5),(200.0,0.25),(200.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t4-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_2
+        t4-m2 aborted: true
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_2
+        t4-m2 aborted: false
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_4
+        t1-m4 has started: true
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_2
+        t4-m2 aborted: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 9 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 9 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 9 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 9 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t1-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 10 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 10 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 10 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 10 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 11 has occurred
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_2
+        Agent_2 has asked to start t1-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 11 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 11 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 11 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_2
+        t1-m2 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_3
+        Agent_3 has asked to start t1-m3
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 12 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 12 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 12 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 12 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t1-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_3
+        t1-m3 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 13 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 13 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 13 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 13 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":3,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t1-m3"},"Compleated":""}
+
+
+    ## Method ##
+        Name: t1-m4
+        Completed By : Agent_4
+        With Quality : 20.0
+        With Duration: 5
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_4
+        Agent_4 has completed t1-m4
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_2
+        Agent_2 has asked to abort t1-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 14 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 14 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 14 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 14 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_2
+        t1-m2 aborted: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_4
+        Agent_4 has asked to start t2-m4
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 15 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 15 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 15 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 15 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m4"}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_4
+        t2-m4 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_2
+        Agent_2 has asked to start t2-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 16 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 16 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 16 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 16 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t2-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_2
+        t2-m2 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 17 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 17 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 17 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 17 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_2","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_2"],"NodeName":"t2-m2"},"Compleated":""}
+
+
+    ## Method ##
+        Name: t1-m3
+        Completed By : Agent_3
+        With Quality : 5.0
+        With Duration: 5
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_3
+        Agent_3 has completed t1-m3
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 18 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 18 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 18 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 18 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":2,"Type":"Compleated","Running":"","Compleated":"t1-m3"}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_3
+        Agent_3 has asked to start t2-m3
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 19 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 19 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 19 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 19 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_3
+        t2-m3 has started: true
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 20 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 20 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 20 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 20 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":2,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t2-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 21 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 21 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 21 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 21 has occurred
+
+
+    ## Method ##
+        Name: t2-m2
+        Completed By : Agent_2
+        With Quality : 5.0
+        With Duration: 5
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_2
+        Agent_2 has completed t2-m2
+
+
+    ## Message ##
+        Received a AbortMethodMessage From Agent_2
+        Agent_2 has asked to abort t2-m2
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 22 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 22 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 22 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 22 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodAbortMessage to Agent_2
+        t2-m2 aborted: false
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_3 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_4 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_2
+        Agent_2 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m2"}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_2
+        Agent_2 has asked to start t3-m2
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 23 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 23 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 23 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 23 has occurred
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_2
+        t3-m2 has started: true
+
+
+    ## Method ##
+        Name: t4-m1
+        Completed By : Agent_1
+        With Quality : 200.0
+        With Duration: 20
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_1
+        Agent_1 has completed t4-m1
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 24 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 24 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 24 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 24 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_2 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_3 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_1
+        Agent_1 has sent a message to Agent_4 with content: {"Load":0,"Type":"Compleated","Running":"","Compleated":"t4-m1"}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 25 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 25 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 25 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 25 has occurred
+
+
+    ## Method ##
+        Name: t2-m4
+        Completed By : Agent_4
+        With Quality : 5.0
+        With Duration: 10
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_4
+        Agent_4 has completed t2-m4
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 26 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 26 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 26 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 26 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 27 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 27 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 27 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 27 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 28 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 28 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 28 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 28 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_4
+        Agent_4 has asked to start t3-m4
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 29 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 29 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 29 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 29 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m4"}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_4
+        t3-m4 has started: true
+
+
+    ## Method ##
+        Name: t2-m3
+        Completed By : Agent_3
+        With Quality : 10.0
+        With Duration: 10
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_3
+        Agent_3 has completed t2-m3
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 30 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 30 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 30 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 30 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a StartMethodMessage From Agent_3
+        Agent_3 has asked to start t3-m3
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 31 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 31 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 31 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 31 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_3 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":1,"Type":"Compleated","Running":"","Compleated":"t2-m3"}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_4
+        Agent_4 has sent a message to Agent_1 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_4","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_4"],"NodeName":"t3-m4"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a ConfirmMethodStartMessage to Agent_3
+        t3-m3 has started: true
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 32 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 32 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 32 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 32 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 33 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 33 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 33 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 33 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 34 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 34 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 34 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 34 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 35 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 35 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 35 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 35 has occurred
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_2 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_4 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Received a AgentToAgentMessage From Agent_3
+        Agent_3 has sent a message to Agent_1 with content: {"Load":1,"Type":"Running","Running":{"SubTasks":[],"AgentName":"Agent_3","Quality":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","Duration":"(20.0,0.5),(10.0,0.25),(5.0,0.25)","NodeType":"Method","VisibleToAgents":["Agent_3"],"NodeName":"t3-m3"},"Compleated":""}
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 36 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 36 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 36 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 36 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 37 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 37 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 37 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 37 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 38 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 38 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 38 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 38 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 39 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 39 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 39 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 39 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 40 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 40 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 40 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 40 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 41 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 41 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 41 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 41 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 42 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 42 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 42 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 42 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_2
+        Tick 43 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_3
+        Tick 43 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_4
+        Tick 43 has occurred
+
+
+    ## Message ##
+        Sending a NextTickMessage to Agent_1
+        Tick 43 has occurred
+
+
+    ## Method ##
+        Name: t3-m2
+        Completed By : Agent_2
+        With Quality : 5.0
+        With Duration: 20
+
+
+    ## Message ##
+        Sending a NotifyMethodCompletedMessage to Agent_2
+        Agent_2 has completed t3-m2
+
+
+    ## Message ##
+        Sending a EndSimulationMessage to Agent_2
+        The Simulation is Over
+
+
+    ## Message ##
+        Sending a EndSimulationMessage to Agent_3
+        The Simulation is Over
+
+
+    ## Message ##
+        Sending a EndSimulationMessage to Agent_4
+        The Simulation is Over
+
+
+    ## Message ##
+        Sending a EndSimulationMessage to Agent_1
+        The Simulation is Over
+
+
+    ## Agent ##
+        Name Agent_2
+        Sent: 37
+        Received: 85
+        Completed: t2-m2, t3-m2
+
+    ## Agent ##
+        Name Agent_3
+        Sent: 39
+        Received: 79
+        Completed: t1-m3, t2-m3
+
+    ## Agent ##
+        Name Agent_4
+        Sent: 39
+        Received: 79
+        Completed: t1-m4, t2-m4
+
+    ## Agent ##
+        Name Agent_1
+        Sent: 11
+        Received: 78
+        Completed: t4-m1

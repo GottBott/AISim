@@ -1,0 +1,65 @@
+####### Ordered Logger #######
+
+
+Final Duration: 149.0
+Final Quality: 235.0
+Seed: 46081386
+
+##### Method Results #####
+
+
+    ## Method ##
+        Name: t4-m3
+        Completed By : Agent_3
+        With Quality : 200.0
+        With Duration: 100
+
+
+    ## Method ##
+        Name: t1-m3
+        Completed By : Agent_3
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t2-m3
+        Completed By : Agent_3
+        With Quality : 20.0
+        With Duration: 10
+
+
+    ## Method ##
+        Name: t3-m3
+        Completed By : Agent_3
+        With Quality : 5.0
+        With Duration: 10
+
+##### Relationship Results #####
+
+##### Agent Results #####
+
+
+    ## Agent ##
+        Name Agent_2
+        Sent: 5
+        Received: 161
+        Completed: 
+
+    ## Agent ##
+        Name Agent_3
+        Sent: 20
+        Received: 168
+        Completed: t4-m3, t1-m3, t2-m3, t3-m3
+
+    ## Agent ##
+        Name Agent_4
+        Sent: 5
+        Received: 161
+        Completed: 
+
+    ## Agent ##
+        Name Agent_1
+        Sent: 2
+        Received: 158
+        Completed: 

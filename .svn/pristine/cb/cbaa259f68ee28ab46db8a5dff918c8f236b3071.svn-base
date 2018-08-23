@@ -1,0 +1,318 @@
+% CISC475: Advanced Software Engineering
+% CISC675: Software Engineering Principles & Practices
+% Template for software development project report
+
+\documentclass[11pt]{report}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{graphicx}
+\usepackage[letterpaper,textheight=9in,left=1in,%
+textwidth=6.5in,bottom=1in]{geometry}
+\usepackage{hyperref}
+  
+\title{WebSys}
+
+\author{%  
+  Name of Chief Architect, Chief Architect\\
+  Name of Manager, Manager\\
+  Name of Documentarian, Documentarian\\
+  \emph{all other members who contributed to this document}
+  % note: the titles are optional; if the members of your team
+  % did not use any titles, don't put them here
+}
+
+% I put this macro here to make it easy to write glossary entries...
+\newlength{\glosslen}
+\setlength{\glosslen}{\textwidth}
+\addtolength{\glosslen}{-10mm}
+\newcommand{\gloss}[2]{
+  \vspace{3mm}
+
+  \noindent\textbf{#1}\vspace{1mm}
+
+  \hspace{5mm}\parbox{\glosslen}{#2}}
+
+% Put your own macros here...
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\chapter{Preliminaries}
+
+\section{Change Log}
+
+Reverse-chronological list of changes to this document from
+version 0.1 on.  
+
+\section{Introduction}
+Here we give a brief description of what our vision for the product
+is and what problem it solves.
+
+Say something about your team and the members.  (Did they have
+different responsibilities?)
+
+What is the URL for your team?  You must have a web presence in
+today's competetive world.
+
+Say something about your development process.  Did you use version
+control?  Where, when, and how?  What are development
+tools/methodologies did you use?  What about bug tracking?
+
+Now say something about how this document is organized.
+
+How was this document prepared?  (Answer: \LaTeX)
+
+
+\chapter{Requirements}
+
+You can structure this part how you want.   The structures here
+are only suggestions.
+
+\section{Stakeholders}
+
+Who are the stake holders and how does each stakholder
+depend on the outcome of this project?
+
+
+\section{Problem Domain}
+A requirements document typically begins with a description of the
+problem domain.   Note that the components of this description
+are \emph{not} requirements---they are ``givens'' describing
+the world with which the software deals.
+
+Here you usually define domain-specific vocabularly that will be used
+throughout this report.  Be sure to give a precise definition of each
+term before the first use of that term, and create an entry
+for that term in the Glossary.
+
+\section{Some Section}
+
+The rest of the requirements section of the report must clearly
+specify all requirements of the product.  The ingredients that
+go into this description may include:
+\begin{itemize}
+\item clear, precise English prose
+\item lists: each entry in the list describing one very specific
+  requirement and giving a short name to that requirements;
+  typically these lists are organized hierarchically
+\item dataflow diagrams: together with descriptions in the prose
+\item entity relationship diagrams: ditto
+\item formal grammars
+\item finite state automata
+\end{itemize}
+
+This would be a good place for a Use Case Context Diagram (Figure
+\ref{fig:context}) together with text giving an overview of the use
+cases and how they are related.
+
+\begin{figure}
+  \begin{center}
+    This is my Use Case Context Diagram
+  \end{center}
+  \caption{Use Case Context Diagram}
+  \label{fig:context}
+\end{figure}
+
+\section{Use Cases}
+
+\subsection{Use Case 1: Goal 1}
+\label{uc:sale}
+
+This is excerpted from \cite{larman}.  I have reproduced it here to
+show you a way to typeset a use case using \LaTeX.  Your use cases do
+not have to contain as much details as these.  Use only fields that
+are necessary and relevant to describe the behavior in each case.
+
+\paragraph{Scope:} NetGen POS application
+
+\paragraph{Level:} user goal
+
+\paragraph{Primary Actor:} Cashier
+
+\paragraph{Stakeholders and Interests:}
+\begin{itemize}
+\item Cashier: Wants accurate, fast entry, and no payment errors, as
+  cash drawer shortages are deducted from his/her salary.
+\item Salesperson: Wants sales commissions updated.
+\item Customer: Wants purchase and fast service with minimal effort.
+  Wants easily visible display of entered items and prices.  Wants
+  proof of purchase to support returns.
+\item Company: Wants to accurately record transactions and satisfy
+  customer interests.  Wants to ensure that Payment Authorization
+  Service payment receivables are recorded.  Wants some fault
+  tolerance to allow sales capture even if server components (e.g.,
+  remote credit validation) are unavailable.  Wants automatic and fast
+  update of accounting and inventory.
+\item Manager: Wants to be able to quickly perform override
+  operations, and easily debug Cashier problems.
+\item Government Tax Agencies: Want to collect tax from every sale.
+  May be multiple agencies, such as national, state, and county.
+\item Payment Authorization Service: Wants to receive digital
+  authorization requests in the correct format and protocol.  Wants to
+  accurately account for their payables to the store.
+\end{itemize}
+
+\paragraph{Preconditions:} Cashier is identified and authenticated.
+
+\paragraph{Success Guarantee (or Postconditions):} Sale is saved.  Tax is
+correcctly calculated.  Accounting and Inventory are updated.
+Commissions recorded.  Receipt is generated.  Payment authorization
+approvals are recorded.
+
+\paragraph{Main Success Scenario (or Basic Flow):}
+\begin{enumerate}
+\item \label{uc:sale:arrive} Customer arrives at POS checkout with
+  goods and/or services to purchase.
+\item \label{uc:sale: start} Cashier starts a new sale.
+\item \label{uc:sale:enter} Cashier enters item identifier.
+\item \label{uc:sale:record} System records sale line item and
+  presents item description, price, and running total.  Price
+  calculated from a set of price rules.\newline \emph{Cashier repeats
+    steps \ref{uc:sale:enter}--\ref{uc:sale:record} until indicates
+    done.}
+\item \label{uc:sale:total} System presents total with taxes
+  calculated.
+\item \label{uc:sale:ask} Cashier tells Customer the total, and asks
+  for payment.
+\item \label{uc:sale:pay} Customer pays and System handles payment.
+\item System logs completed sale and sends sale and payment
+  information to the external Accounting system (for accounting and
+  commissions) and Inventory system (to update inventory).
+\item System presents receipt.
+\item Customer leaves with receipt and goods (if any).
+\end{enumerate}
+
+\paragraph{Extensions (or Alternative Flows):}
+
+\begin{itemize}
+
+\item[*a.] At any time, Manager requests an override operation:
+  \begin{enumerate}
+  \item System enters Manager-authorized mode.
+  \item Manager or Cashier performs one Manger-mode operation. e.g.,
+    cash balance change, resume a suspended sale on another register,
+    void a sale, etc.
+  \item System reverts to Cashier-authorized mode.
+  \end{enumerate}
+
+\item[\ref{uc:sale:arrive}a.] Customer or Manager indicate to resume a
+  suspended sale.
+  \begin{enumerate}
+  \item Cashier performs resume operation, and enters the ID to
+    retrieve the sale.
+  \item System displays the state of the resumed sale, with subtotal.
+    \begin{enumerate}
+    \item Sale not found.
+      \begin{enumerate}
+      \item System signals error to the Cashier.
+      \item Cashier probably starts new sale and re-enters all items.
+      \end{enumerate}
+    \end{enumerate}
+  \item Cashier continues with sale (probably entering more items or
+    handling payment).
+  \end{enumerate}
+\end{itemize}
+
+\subsection{Use Case 2: Goal 2}
+
+Here is the second use case.
+
+\subsection{Use Case 3: Goal 3}
+
+Here is the third.  And so on.
+
+\section{Non-functional Requirements}
+
+Other kinds of requirements: will it have to work on a network?  What
+kind of platform can it be installed on?  Performance? Etc.?
+
+\chapter{Design}
+
+\section{Architecture}
+
+How will the system be decomposed into (highest-level) modules?  Start
+by listing the modules and giving each module a name.  For each
+module, give a brief description of its responsibilities and a list of
+the other modules it will use.
+
+Now explain the rationalization for the design.  Why did you break it
+down the way you did?  How does each module hide design decision(s)?
+What alternative designs were considered, what were their
+advantages/disadvantages, and why did you end up choosing this one.
+
+
+
+\section{Detailed Design}
+
+Now give a subsection on each module where you go into more detail.
+First, what is the \emph{interface} for the module? This may be as
+simple as a list of method signatures.
+
+How will that module be decomposed into sub-modules?  What will the
+uses relation look like on those submodules?  Perhaps UML class
+diagrams would be appropriate.
+
+\section{Traceability}
+
+Ideally, you would now go through every requirement and explain
+how it can be realized in the given design.  This may be too much,
+so pick some interesting non-trivial subset of the requirements
+and do it for them.
+
+\chapter{Verification}
+
+\section{Verification Strategy}
+
+What is your overall verification strategy?   Note that you should
+have thought about this before you started implementing the code.
+
+\section{Testing 1....}
+
+Now break down the description of the test suite in some way.
+Perhaps into ``white box tests'' and ``black box tests''.
+
+\section{Results}
+
+How many tests are there, how many pass, how many failed, etc.
+What interesting defects were discovered by the tests and 
+how were they corrected (just some examples).
+
+Give the results of coverage analyses as well.
+
+\appendix
+
+\chapter{Glossary}
+
+It is a really good idea to have a glossary.  It contributes towards
+internal completeness.
+
+\gloss{modularity}{the quality of being divided into modules.  I will
+  continue this definition just because I want to see what it looks
+  like when it wraps around a line.  Not too shabby, if I do say so
+  myself.}
+
+\gloss{someword}{the definition of that word}
+
+\gloss{someword2}{the definition of that word2}
+
+\gloss{someword3}{the definition of that word3}
+
+\gloss{someword4}{the definition of that word4}
+
+\gloss{someword5}{the definition of that word5}
+
+\begin{thebibliography}{9}
+
+\bibitem{larman} Craig Larman, \emph{Applying UML and Patterns: An
+    Introduction to Object-Oriented Analysis and Design and Iterative
+    Development}, 3rd edition, Prentice Hall, Upper Saddle River, New
+  Jersey, 2005.
+  
+\end{thebibliography}
+
+
+\end{document}
+

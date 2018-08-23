@@ -1,0 +1,77 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}General System Requirements}{4}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{systemRequirements}{{3}{4}{General System Requirements}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}System Features}{4}{section.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces ERD diagram for basic components of MASS.}}{5}{figure.3.1}}
+\newlabel{fig:ERD }{{3.1}{5}{ERD diagram for basic components of MASS}{figure.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Excerpt of cTAEMS grammar to define a Method}}{6}{figure.3.2}}
+\newlabel{fig:Grammar1}{{3.2}{6}{Excerpt of cTAEMS grammar to define a Method}{figure.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Excerpt of cTAEMS grammar to define a Task}}{6}{figure.3.3}}
+\newlabel{fig:Grammar2}{{3.3}{6}{Excerpt of cTAEMS grammar to define a Task}{figure.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample CFI}}{6}{figure.3.4}}
+\newlabel{fig:CFI}{{3.4}{6}{Sample CFI}{figure.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Format of AgentRegistration Message}}{7}{figure.3.5}}
+\newlabel{fig:AgentRegistration}{{3.5}{7}{Format of AgentRegistration Message}{figure.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Format of AskMethodStatus Message}}{7}{figure.3.6}}
+\newlabel{fig:AskMethodStatus}{{3.6}{7}{Format of AskMethodStatus Message}{figure.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Format of ConfirmMethodStart Message}}{8}{figure.3.7}}
+\newlabel{fig:ConfirmMethodStart}{{3.7}{8}{Format of ConfirmMethodStart Message}{figure.3.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Format of InitialTree Message}}{9}{figure.3.8}}
+\newlabel{fig:InitialTreeMessage}{{3.8}{9}{Format of InitialTree Message}{figure.3.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Format of UpdateTree Message}}{10}{figure.3.9}}
+\newlabel{fig:UpdateTreeMessage}{{3.9}{10}{Format of UpdateTree Message}{figure.3.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Format of NotifyMethodCompleted Message}}{11}{figure.3.10}}
+\newlabel{fig:NotifyMethodCompleted}{{3.10}{11}{Format of NotifyMethodCompleted Message}{figure.3.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Format of NotifyMethodStatus Message}}{11}{figure.3.11}}
+\newlabel{fig:NotifyMethodStatus}{{3.11}{11}{Format of NotifyMethodStatus Message}{figure.3.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Format of NotifyRelationshipActivation Message}}{11}{figure.3.12}}
+\newlabel{fig:NotifyRelationshipActivation}{{3.12}{11}{Format of NotifyRelationshipActivation Message}{figure.3.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Format of SetRandomSeed Message}}{12}{figure.3.13}}
+\newlabel{fig:SetRandomSeed}{{3.13}{12}{Format of SetRandomSeed Message}{figure.3.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Format of StartMethod Message}}{12}{figure.3.14}}
+\newlabel{fig:StartMethod}{{3.14}{12}{Format of StartMethod Message}{figure.3.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Format of StartSimulation Message}}{12}{figure.3.15}}
+\newlabel{fig:StartSimulation}{{3.15}{12}{Format of StartSimulation Message}{figure.3.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Format of EndSimulation Message}}{13}{figure.3.16}}
+\newlabel{fig:EndSimulation}{{3.16}{13}{Format of EndSimulation Message}{figure.3.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Format of NextTick Message}}{13}{figure.3.17}}
+\newlabel{fig:NextTick}{{3.17}{13}{Format of NextTick Message}{figure.3.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Format of AgentToAgent Message}}{13}{figure.3.18}}
+\newlabel{fig:AgentToAgentMessage}{{3.18}{13}{Format of AgentToAgent Message}{figure.3.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Example Task Tree with Relationships}}{14}{figure.3.19}}
+\newlabel{fig:TaskTree}{{3.19}{14}{Example Task Tree with Relationships}{figure.3.19}{}}
+\@setckpt{systemRequirements}{
+\setcounter{page}{17}
+\setcounter{equation}{0}
+\setcounter{enumi}{3}
+\setcounter{enumii}{1}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{1}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{19}
+\setcounter{table}{0}
+\setcounter{pp@next@reset}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{parentequation}{0}
+\setcounter{float@type}{4}
+\setcounter{Item}{47}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{11}
+\setcounter{example}{0}
+\setcounter{proof}{0}
+\setcounter{section@level}{1}
+}

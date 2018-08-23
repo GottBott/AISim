@@ -1,0 +1,22 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: AISim.aux
+A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: general.aux
+A level-1 auxiliary file: systemRequirements.aux
+A level-1 auxiliary file: otherFunctionalRequirements.aux
+A level-1 auxiliary file: detailedSystemDescription.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: glossary.aux
+The style file: ieeetran.bst
+I couldn't open database file glossary.bib
+---line 30 of file AISim.aux
+ : \bibdata{glossary
+ :                  }
+I'm skipping whatever remains of this command
+I found no database files---while reading file AISim.aux
+Warning--I didn't find a database entry for "MAS"
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+(There were 2 error messages)

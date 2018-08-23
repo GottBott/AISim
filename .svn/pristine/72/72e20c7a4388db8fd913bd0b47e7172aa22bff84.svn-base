@@ -1,0 +1,221 @@
+;;;;
+;; @Author Ben Gotthold 4/14/15
+;; Scenario where there are 4 tasks. One task_4 can be accomplished by any agent.
+;; The remaining 3 tasks can be accomplished by any of Agent_2, Agent_3, and Agent_4.
+;; This tests whether Agent 1 is the agent who accomplishes task 4.
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent_1)
+)
+
+(spec_agent
+  (label Agent_2)
+)
+
+(spec_agent
+  (label Agent_3)
+)
+
+(spec_agent
+  (label Agent_4)
+)
+
+(spec_task_group
+   (label Problem1)
+   (subtasks t1 t2 t3 t4)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label t1)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks t1-m2 t1-m3 t1-m4)
+   (qaf q_or)
+)
+
+(spec_task
+   (label t2)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks t2-m2 t2-m3 t2-m4)
+   (qaf q_or)
+)
+
+(spec_task
+   (label t3)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks t3-m2 t3-m3 t3-m4)
+   (qaf q_or)
+)
+
+(spec_task
+   (label t4)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks t4-m1 t4-m2 t4-m3 t4-m4)
+   (qaf q_or)
+)
+
+
+(spec_method
+   (label t1-m2)
+   (agent Agent_2)
+   (outcomes
+      (t1-m2_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t1-m3)
+   (agent Agent_3)
+   (outcomes
+      (t1-m3_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t1-m4)
+   (agent Agent_4)
+   (outcomes
+      (t1-m4_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+
+(spec_method
+   (label t2-m2)
+   (agent Agent_2)
+   (outcomes
+      (t2-m2_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t2-m3)
+   (agent Agent_3)
+   (outcomes
+      (t2-m3_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t2-m4)
+   (agent Agent_4)
+   (outcomes
+      (t2-m4_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+
+(spec_method
+   (label t3-m2)
+   (agent Agent_2)
+   (outcomes
+      (t3-m2_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t3-m3)
+   (agent Agent_3)
+   (outcomes
+      (t3-m3_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t3-m4)
+   (agent Agent_4)
+   (outcomes
+      (t3-m4_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t4-m1)
+   (agent Agent_1)
+   (outcomes
+      (t4-m1_o0
+         (density 1.0)
+         (quality_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+         (duration_distribution 20.0 0.5 20.0 0.25 20.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t4-m2)
+   (agent Agent_2)
+   (outcomes
+      (t4-m2_o0
+         (density 1.0)
+         (quality_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+         (duration_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t4-m3)
+   (agent Agent_3)
+   (outcomes
+      (t4-m3_o0
+         (density 1.0)
+         (quality_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+         (duration_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label t4-m4)
+   (agent Agent_4)
+   (outcomes
+      (t4-m4_o0
+         (density 1.0)
+         (quality_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+         (duration_distribution 200.0 0.5 200.0 0.25 200.0 0.25)
+      )
+   )
+)

@@ -1,0 +1,15 @@
+CISC 475 Project
+Multi-Agent System Simulation
+Fall 2014
+
+To run our project, use this command:
+
+	java -cp AIsim.jar edu.udel.cisc475.aisim.application.AIsim INPUT
+
+		INPUT - The location of the .ctaems file to run.
+
+Two helper files are included in trunk/runFiles. They are:
+	simple.ctaems
+	SimpleAgent.py
+
+Running this will start up a simulation. First, a server will start and listen for agents to connect. Run the python script to create a connection to the server. This script has a few options of message to send to the simulator. Send the Registration message first to tell the server which agent you are. Next, send the AskMethodStatus message. This message will ask the simulator the status of Method1. In return, the simulator will send a response. Finally, you can send the MethodStartMessage to try and start Method1. The simulator will reply saying whether or not you are allowed to start (it will say yes). Then it will wait to correct number of ticks and tell you it finished. Finally, the simulator will close since the only completable method is now finished.

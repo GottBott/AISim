@@ -1,0 +1,147 @@
+;;;;
+;; @Author Ben Gotthold 4/1/15
+;; Scenario where three tasks each have 3 methods
+;; Same three methods for each task
+;; should be optimal for a greedy agent
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent_1)
+)
+
+
+(spec_task_group
+   (label Head)
+   (subtasks Task1 Task2 Task3)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label Task1)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks m1 m2 m3)
+   (qaf q_or)
+)
+
+(spec_task
+   (label Task2)
+   (subtasks m4 m5 m6)
+   (qaf q_or)
+)
+
+(spec_task
+   (label Task3)
+   (subtasks m7 m8 m9)
+   (qaf q_or)
+)
+
+(spec_method
+   (label m1)
+   (agent Agent_1)
+   (outcomes
+      (m1_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m2)
+   (agent Agent_1)
+   (outcomes
+      (m2_o0
+         (density 1.0)
+         (quality_distribution 40.0 0.5 20.0 0.25 10.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m3)
+   (agent Agent_1)
+   (outcomes
+      (m3_o0
+         (density 1.0)
+         (quality_distribution 80.0 0.5 40.0 0.25 20.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m4)
+   (agent Agent_1)
+   (outcomes
+      (m4_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m5)
+   (agent Agent_1)
+   (outcomes
+      (m5_o0
+         (density 1.0)
+         (quality_distribution 40.0 0.5 20.0 0.25 10.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m6)
+   (agent Agent_1)
+   (outcomes
+      (m6_o0
+         (density 1.0)
+         (quality_distribution 80.0 0.5 40.0 0.25 20.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m7)
+   (agent Agent_1)
+   (outcomes
+      (m7_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m8)
+   (agent Agent_1)
+   (outcomes
+      (m8_o0
+         (density 1.0)
+         (quality_distribution 40.0 0.5 20.0 0.25 10.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)
+
+(spec_method
+   (label m9)
+   (agent Agent_1)
+   (outcomes
+      (m9_o0
+         (density 1.0)
+         (quality_distribution 80.0 0.5 40.0 0.25 20.0 0.25)
+         (duration_distribution 20.0 0.5 10.0 0.25 5.0 0.25)
+      )
+   )
+)

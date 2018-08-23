@@ -1,0 +1,50 @@
+\section{Glossary}
+\begin{itemize}
+
+\item{\textbf{Multi-Agent System}: A project that includes two or more independent software Agents working to complete a common goal.}
+
+\item{\textbf{Multi-Agent System Simulator (MASS)}: The specific computer program being outlined in this document.}
+
+\item{\textbf{Simulation}: A generic instance in which the MASS is running on a given input.}
+
+\item{\textbf{Agent}: A user defined software program that can communicate with the Simulation through a TCP socket connection.}
+
+\item{\textbf{cTAEMS}:   A derivative of the TAEMS language that will be employed for specifying task domains.}
+
+\item{\textbf{Task}: A high level goal within the system.}
+
+\item{\textbf{Subtask}: A Task that is the child of another Task.}
+
+\item{\textbf{Method}: An action executed by an Agent in order to complete a Task or Subtask. Each Method is assigned a Duration and Quality for completion. It is also assigned to only one Agent that is allowed to execute it.}
+
+\item{\textbf{Node}: An individual Method or Task.}
+
+\item{\textbf{Task Group}: A high level grouping of Tasks that share a similar structure or goal.}
+
+\item{\textbf{Quality}: A numeric value used to measure the degree of satisfaction resulting from a particular Node.}
+
+\item{\textbf{Duration}: A numeric value used to measure the time it takes to complete an Node.}
+
+\item{\textbf{Quality Accumulation Function (QAF)}: A properties of Tasks that is the logic behind how a Task is deemed completed. Also determines how the Quality of a Task is calculated.}
+
+\item{\textbf{AND}: A QAF where all Subtasks of a Task must be completed for that Task to be completed. Quality is the minimum of all Subtasks' Qualities.}
+
+\item{\textbf{OR}: A QAF where at least one Subtask of a Task must be completed for that Task to be completed. Quality is the maximum of all Subtasks' Qualities.}
+
+\item{\textbf{SUM}: A QAF where at least one Subtask of a Task must be completed for that Task to be completed. Quality is the sum of all Subtasks' Qualities.}
+
+\item{\textbf{Relationship}: A linking between two Nodes. This linking causes the completion of one Node to directly affect the state of another.}
+
+\item{\textbf{Enables}: A relationship where a Node can allow the execution of another Node.}
+
+\item{\textbf{Disables}: A relationship where a Node can disallow the execution of another Node.}
+
+\item{\textbf{Hinders}: A relationship where a Node can negatively affect the Quality, and Duration of a Method. It is important to note that only a Method can be on the receiving end of this relationship.}
+
+\item{\textbf{Facilitates}: A relationship where a Node can positively affect the Quality, and Duration of a Method. It is important to note that only a Method can be on the receiving end of this relationship.}
+
+\item{\textbf{Task Tree}: A way to represent Nodes and the Relationships between them.}
+
+\item{\textbf{Tick}: A one unit advancement of an internal counter used as a clock.}
+
+\end{itemize}

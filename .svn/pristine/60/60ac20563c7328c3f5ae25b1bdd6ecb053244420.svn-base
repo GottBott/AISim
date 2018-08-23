@@ -1,0 +1,135 @@
+####### Ordered Logger #######
+
+
+Final Duration: 94.0
+Final Quality: 90.0
+Seed: 17443642
+
+##### Method Results #####
+
+
+    ## Method ##
+        Name: t1-m4
+        Completed By : Agent_4
+        With Quality : 20.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t2-m4
+        Completed By : Agent_4
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t1-m3
+        Completed By : Agent_3
+        With Quality : 60.0
+        With Duration: 60
+
+
+    ## Method ##
+        Name: t1-m1
+        Completed By : Agent_1
+        With Quality : 60.0
+        With Duration: 60
+
+
+    ## Method ##
+        Name: t1-m2
+        Completed By : Agent_2
+        With Quality : 60.0
+        With Duration: 60
+
+
+    ## Method ##
+        Name: t3-m4
+        Completed By : Agent_4
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t2-m2
+        Completed By : Agent_2
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t3-m1
+        Completed By : Agent_1
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t2-m3
+        Completed By : Agent_3
+        With Quality : 10.0
+        With Duration: 20
+
+
+    ## Method ##
+        Name: t4-m4
+        Completed By : Agent_4
+        With Quality : 10.0
+        With Duration: 20
+
+##### Relationship Results #####
+
+
+    ## Relationship ##
+        Name: facilitates1
+        Type: Facilitates
+        Source : t1-m4
+        Target : t4-m3
+
+
+    ## Relationship ##
+        Name: disables1
+        Type: Disables
+        Source : t1-m3
+        Target : t4-m3
+
+
+    ## Relationship ##
+        Name: disables1
+        Type: Disables
+        Source : t1-m1
+        Target : t2-m1
+
+
+    ## Relationship ##
+        Name: disables1
+        Type: Disables
+        Source : t1-m2
+        Target : t3-m2
+
+##### Agent Results #####
+
+
+    ## Agent ##
+        Name Agent_2
+        Sent: 16
+        Received: 118
+        Completed: t1-m2, t2-m2
+
+    ## Agent ##
+        Name Agent_3
+        Sent: 16
+        Received: 119
+        Completed: t1-m3, t2-m3
+
+    ## Agent ##
+        Name Agent_4
+        Sent: 20
+        Received: 121
+        Completed: t1-m4, t2-m4, t3-m4, t4-m4
+
+    ## Agent ##
+        Name Agent_1
+        Sent: 17
+        Received: 118
+        Completed: t1-m1, t3-m1

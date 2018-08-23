@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="58cm" height="20cm" viewBox="14 9 1149 397" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="15" y="10" width="487.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15" y="10" width="487.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="258.7" y="30">InputParser</text>
+    <rect style="fill: #ffffff" x="15" y="38" width="487.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15" y="38" width="487.4" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="51.2">-fileLocation: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="67.2">-fileData: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="83.2">-inputData: InputData</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="99.2">-randGen: Random</text>
+    <rect style="fill: #ffffff" x="15" y="106" width="487.4" height="148"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="15" y="106" width="487.4" height="148"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="119.2">+readFile(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="135.2">+parse(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="151.2">+buildTree(enrs:ArrayList&lt;EnablesNodeRelationship&gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="167.2">           fnrs:ArrayList&lt;FacilitateNodeRelationship&gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="183.2">           hnrs:ArrayList&lt;HindersNodeRelationship&gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="199.2">           dnrs:ArrayList&lt;DisablesNodeRelationship&gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="215.2">           methods:ArrayList&lt;Method&gt;,tasks:ArrayList&lt;Task&gt;,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="231.2">           head:Node): TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="18" y="247.2">+distributeTokens(parser:CtaemsParser,lexer:CtaemsLexer): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="710" y="49" width="294.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="49" width="294.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="857.45" y="69">ConfigurationParser</text>
+    <rect style="fill: #ffffff" x="710" y="77" width="294.9" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="77" width="294.9" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713" y="90.2">-fileLocation: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713" y="106.2">-configurationData: ConfigurationData</text>
+    <rect style="fill: #ffffff" x="710" y="113" width="294.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="113" width="294.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713" y="126.2">+parse(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="882" y="146" width="279.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="882" y="146" width="279.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1021.75" y="166">ConfigurationData</text>
+    <rect style="fill: #ffffff" x="882" y="174" width="279.5" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="882" y="174" width="279.5" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="187.2">-seed: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="203.2">-outputDestination: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="219.2">-tickLength: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="235.2">-port: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="251.2">+DEFAULT_SEED: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="267.2">+DEFAULT_OUTPUT_DESTINATION: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="283.2">+DEFAULT_TICK_LENGTH: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="299.2">+DEFAULT_PORT: int</text>
+    <rect style="fill: #ffffff" x="882" y="306" width="279.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="882" y="306" width="279.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="885" y="319.2">+makeDefault(): ConfigurationData</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="33" y="317" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="33" y="317" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="130.4" y="337">InputData</text>
+    <rect style="fill: #ffffff" x="33" y="345" width="194.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="33" y="345" width="194.8" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="36" y="358.2">+tree: TaskTree</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="36" y="374.2">+version: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="36" y="390.2">+agents: HashSet&lt;String&gt;</text>
+    <rect style="fill: #ffffff" x="33" y="397" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="33" y="397" width="194.8" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="520" y="12" width="156.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="520" y="12" width="156.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="598.15" y="32">FileError</text>
+    <rect style="fill: #ffffff" x="520" y="40" width="156.3" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="520" y="40" width="156.3" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="523" y="53.2">-lineNumber: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="523" y="69.2">-error: String</text>
+    <rect style="fill: #ffffff" x="520" y="76" width="156.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="520" y="76" width="156.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="523" y="89.2">+toString(): String</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="561" y="317" width="256.05" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561" y="317" width="256.05" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="689.025" y="337">InvalidConfigurationException</text>
+    <rect style="fill: #ffffff" x="561" y="345" width="256.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561" y="345" width="256.05" height="8"/>
+    <rect style="fill: #ffffff" x="561" y="353" width="256.05" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="561" y="353" width="256.05" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="518" y="167" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="518" y="167" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="634.65" y="187">InvalidFileException</text>
+    <rect style="fill: #ffffff" x="518" y="195" width="233.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="518" y="195" width="233.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="521" y="208.2">-errors: ArrayList&lt;FileError&gt;</text>
+    <rect style="fill: #ffffff" x="518" y="215" width="233.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="518" y="215" width="233.3" height="8"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="344" y="317" width="190.7" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="344" y="317" width="190.7" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="439.35" y="337">InvalidInputException</text>
+    <rect style="fill: #ffffff" x="344" y="345" width="190.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="344" y="345" width="190.7" height="8"/>
+    <rect style="fill: #ffffff" x="344" y="353" width="190.7" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="344" y="353" width="190.7" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="258.7,254.967 258.7,281.502 130.4,281.502 130.4,309.296 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="125.4,296.648 130.4,312.648 135.4,296.648 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="194.55" y="277.502">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="634.65,140.821 634.65,124.499 598.15,124.499 598.15,97.0052 "/>
+    <polygon style="fill: #ffffff" points="634.65,165.993 629.85,151.993 634.65,137.993 639.45,151.993 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="634.65,165.993 629.85,151.993 634.65,137.993 639.45,151.993 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="616.4" y="120.499"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="645.65" y="161.993"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="602.15" y="109.005"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="634.65,242.243 634.65,278.504 439.35,278.504 439.35,317 "/>
+    <polygon style="fill: #ffffff" points="642.65,242.243 634.65,226.243 626.65,242.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="642.65,242.243 634.65,226.243 626.65,242.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="634.65,242.243 634.65,278.504 689.025,278.504 689.025,317 "/>
+    <polygon style="fill: #ffffff" points="642.65,242.243 634.65,226.243 626.65,242.243 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="642.65,242.243 634.65,226.243 626.65,242.243 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="857.45,134.005 857.45,221.503 817.05,221.503 817.05,310.295 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="812.05,297.647 817.05,313.647 822.05,297.647 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="837.25" y="217.503">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="258.7,254.983 258.7,278.5 344,278.5 344,310.295 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="339,297.647 344,313.647 349,297.647 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="301.35" y="274.5">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="857.45,47.9948 857.45,26.9948 1021.75,26.9948 1021.75,138.289 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1016.75,125.642 1021.75,141.642 1026.75,125.642 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="939.6" y="22.9948">uses</text>
+  </g>
+</svg>

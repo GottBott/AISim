@@ -1,0 +1,21 @@
+
+\chapter{General Description}\label{chapter:general}
+
+The product is meant to serve as a common platform for academic and research oriented activities in the area of Multi-Agent Simulation. The following sections describe the high level view of the system and establish its context. These sections do not state specific requirements but make the specific requirements easier to understand.
+
+\section{Stakeholders}
+The stakeholders of the Multi-Agent System Simulator are classified into the following categories.
+
+\begin{itemize}
+\item{\textbf{Dr. Decker}: Needs a platform to test his software agents in a way that can help advance his research and lead to new innovations. He can be contacted through email and met with in person readily.}
+
+\item{\textbf{Dr. Siegel}: Needs a challenging project for his 475 students that is able to be completed over the course of the semester. The project should condone the use of software tools to test implementations and  track changes. He can be contacted through email or Skype and can be met with in person readily.}
+
+\item{\textbf{Researchers}: Researchers might want to use this software for their research to design agents and simulations when testing new ideas.}
+
+\item{\textbf{CIS faculty}: Needs an interactive tool for students to make the task of learning more interesting.}
+
+\item{\textbf{Developers}: Developers are responsible for the designing, testing, configuring, and upgrading of the subsystems.}
+
+\item{\textbf{Support}: Support personnel are responsible for the maintenance of the system, the software, the installation of subsystems, and configuration changes.}
+\end{itemize}

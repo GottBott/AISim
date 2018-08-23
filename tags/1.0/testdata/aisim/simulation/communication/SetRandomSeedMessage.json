@@ -1,0 +1,1 @@
+{"MessageType":"SetRandomSeedMessage","Message":{"MsgSender":"Agent1","MsgDest":"SIMULATOR","MethodName":"Method1","Seed":20}}

@@ -1,0 +1,1 @@
+{"MessageType":"ConfirmMethodStartMessage","Message":{"MsgSender":"Agent1","MsgDest":"SIMULATOR","MethodName":"Method1","started":"true"}}

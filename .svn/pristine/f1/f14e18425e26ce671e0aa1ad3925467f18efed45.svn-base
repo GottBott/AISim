@@ -1,0 +1,93 @@
+;;;;
+;; Scenario from cookbook 20-Apr-2005
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent1)
+)
+
+(spec_task_group
+   (label Problem1)
+   (subtasks Window1)
+   (qaf q_and)
+)
+
+(spec_task
+   (label Window1)
+   (earliest_start_time 0)
+   (deadline 600000)
+   (subtasks Method1 Method2)
+   (qaf q_sum)
+)
+
+(spec_method
+   (label Method1)
+   (agent Agent1)
+   (outcomes
+      (Method1A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 2 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2)
+   (agent Agent1)
+   (outcomes
+      (Method1B_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 19.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 2 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_newtaems
+	(time 10)
+	(splice
+		(Window1)
+		(subtasks CTaskNew)
+	)
+   	(spec_task
+   		(label CTaskNew)
+   		(subtasks MethodNew1 MethodNew2)
+   		(qaf q_or)
+	)
+	(spec_method
+   		(label MethodNew1)
+   		(agent Agent1)
+   		(outcomes
+      		(MethodNew1_o0
+         		(density 1.0)
+         		(quality_distribution 12.0 1.0)
+         		(duration_distribution 4 0.5 5 0.25 6 0.25))))
+   	(spec_method
+   		(label MethodNew2)
+   		(agent Agent1)
+   		(outcomes
+      		(MethodNew2_o0
+         		(density 1.0)
+         		(quality_distribution 12.0 1.0)
+         		(duration_distribution 7 0.5 2 0.25 3 0.25))))
+)
+
+(spec_facilitates
+   (label facilitates1)
+   (from Method1)
+   (to Method2)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_disables
+   (label disables1)
+   (from Method1)
+   (to MethodNew2)
+
+)

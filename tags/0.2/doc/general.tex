@@ -1,0 +1,64 @@
+
+\chapter{General Description}\label{chapter:general}
+
+The product is meant to serve as a common platform for academic and research oriented activities in the area of Multi-Agent Simulation. The following sections describe the high level view of the system and establish its context. These sections do not state specific requirements but make the specific requirements easier to understand.
+
+\section{Stakeholders}
+The stakeholders of the Multi-Agent System Simulator are classified into the following categories.
+
+\begin{itemize}
+\item{\textbf{Dr. Decker}: Needs a platform to test his software agents in a way that can help advance his research and lead to new innovations.}
+
+\item{\textbf{Dr. Siegel}: Needs a challenging project for his 475 students that is able to be completed over the course of the semester. The project should condone the use of software tools to test implementations and  track changes.}
+
+\item{\textbf{Researchers}: Researchers might want to use this software for their research or design agents and simulations when testing new ideas.}
+
+\item{\textbf{CIS faculty}: Needs an interactive tool for students to make the task of learning more interesting.}
+
+\item{\textbf{Developer}: Developers are responsible for the designing, testing, configuring, and upgrading of subsystem.}
+
+\item{\textbf{Support}: Support personnel are responsible for the maintenance of the system, software, as well as the installation of subsystems and configuration changes.}
+\end{itemize}
+
+\section{Definition of concepts}
+\begin{itemize}
+
+\item{\textbf{Multi-Agent System}: A project that includes two or more independent software Agents working to complete a common goal.}
+
+\item{\textbf{Multi-Agent System Simulator (MASS)}: The specific computer program being outlined in this document.}
+
+\item{\textbf{Simulation}: A generic instance in which the MASS is running on a given input.}
+
+\item{\textbf{Agent}: A user defined software program that can communicate with the Simulation through a TCP socket connection.}
+
+\item{\textbf{CTAEMS}:   A derivative of the TAEMS language that will be employed for specifying task domains.}
+
+\item{\textbf{Task}: A high level goal within the system.}
+
+\item{\textbf{Subtask}: A low level goal required to complete a Task.}
+
+\item{\textbf{Method}: An action taken in order to complete a Task or Subtask.}
+
+\item{\textbf{Event}: Individual Tasks, Subtasks, and Methods or a combination of them.}
+
+\item{\textbf{Task Group}: A high level grouping of Tasks that share a similar structure or goal.}
+
+\item{\textbf{Quality}: A numeric value used to measure the degree of satisfaction resulting from a particular Event.}
+
+\item{\textbf{Cost}: A numeric value used to measure the resources consumed as a result of a particular Event.}
+
+\item{\textbf{Duration}: A numeric value used to measure the time it takes to complete an Event.}
+
+\item{\textbf{Enables}: A relationship where an Event can allow the execution of another Event.}
+
+\item{\textbf{Disables}: A relationship where an Event can disallow the execution of another Event.}
+
+\item{\textbf{Hinders}: A relationship where an Event can negatively affect the Cost, Quality, and Duration of another Event.}
+
+\item{\textbf{Facilitates}: A relationship where an Event can positively affect the Cost, Quality, and Duration of another Event.}
+
+\item{\textbf{Task Tree}: A way to represent Events and the relationships between them.}
+
+\item{\textbf{Tick}: A one unit advancement of an internal counter used as a clock.}
+
+\end{itemize}

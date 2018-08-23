@@ -1,0 +1,1 @@
+{"MessageType":"NotifyRelationshipActivationMessage","Message":{"MsgSender":"Agent1","MsgDest":"SIMULATOR","MethodName":"Method1","RelationshipName":"Something"}}

@@ -1,0 +1,154 @@
+
+
+\documentclass[]{article}
+\usepackage[T1]{fontenc}
+\begin{document}
+\title{Getting Started With The M.A.S.S}
+\author{Ben Gotthold}
+\maketitle
+
+\section{Contents}
+
+\begin{itemize}
+
+\item{Running The Simulator}
+\begin{itemize}
+\item{Configuration File}
+\item{Ctaems Input}
+\item{Connecting Agents}
+\end{itemize}
+
+\item{Building Agents}
+\begin{itemize}
+\item{Basic functionality}
+\item{Message Passing}
+\end{itemize}
+
+\item{Collecting Results}
+\begin{itemize}
+\item{Results}
+\item{Ordered Log}
+\item{Sequential Log}
+\end{itemize}
+\end{itemize}
+
+\section{Running The Simulator}
+To run the simulator you will need a ctaems simulation file and an appropriate agent. From the command line run: Java -jar simulation.jar \detokenize{<cteams file> <configuration file>.}
+\begin{itemize}
+
+\item{Ctaems Input}
+
+A ctaems input file is the first input to the simulator and is required to create a simulation. For an example please look at trunk/runFiles. Currently we support the ctaems features of:
+\begin{itemize}
+\item {\detokenize{earliest_start_time}}
+\item{deadline}
+\item{\detokenize{qaf q_or}}
+\item{\detokenize{qaf q_and}}
+\item{\detokenize{qaf q_sum}}
+\item{\detokenize{quality_distribution}}
+\item{\detokenize{duration_distribution}}
+\item{facilitates}
+\item{hinders}
+\item{enables}
+\item{disables}
+\item{\detokenize{duration_power}}
+\item{\detokenize{quality_power}}
+\end{itemize}
+
+\item{Configuration File}
+
+The configuration file is an optional plaintext file named config.ini. It is the second input to the simulator. All items in the file exist on their own line. If a configuration file is not provided, the simulator will create one using default values. For an example, please refer to Trunk/runFiles/config.ini. In the configuration file one can specify one or more of the following items:
+\begin{itemize}
+\item{seed}
+\item{outputDestination}
+\item{tickLength}
+\item{maxTicks}
+\item{port}
+\end{itemize}
+
+\item{Connecting Agents}
+
+When the simulator starts it outputs the address and port it is running on as well as a list of the agents it expects to connect. For example:
+\detokenize{[Agent_Green]}
+
+\detokenize{Server running on 10.0.0.11:9876}
+
+When an agent joins the simulation make sure it has the approprate name in its registration message. 
+
+\end{itemize}
+
+\section{Building Agents}
+
+\begin{itemize}
+\item{Basic Functionality}
+
+An agent must be able to read and create json strings to be successful in the simulation. The simulator and agents communicate by passing json messages back and forth. Basic agent functionality requires agents to send a registration message when they connect to the simulation. This looks like:
+
+
+{\{}"MessageType":"AgentRegistrationMessage","Message":
+
+{\{}"MsgSender":"Agent1","MsgDest":"SIMULATOR"\}\}
+
+For more information on the different message types, check out the examples in trunk/testdata/aisim/simulation/communication
+
+\item{Message passing}
+
+Agents have the ability to pass json messages to each other with any content they desire. For example:
+
+\{
+	"MessageType":"AgentToAgentMessage",
+	"Message":
+	\{
+		"MsgSender":"Agent\_Green",
+		"MsgDest":"Agent\_Red",
+		"Content":
+		\{
+			"Content1":1,
+			"Content2":2
+		\}
+	\}
+\}
+\end{itemize}
+
+
+\section{Collecting Results}
+
+
+\begin{itemize}
+\item{Results}
+
+At the end of a simulation some basic results are returned to the user. For example:
+
+\{
+
+End of simulation.
+
+Results:
+
+Final Duration:	10
+
+Final Quality:	500.0
+
+Log files can be located at: 
+
+/Users/logs/Log\_Ordered\_2015\_May\_12\_10\_22\_23.txt
+
+/Users/logs/Log\_Sequential\_2015\_May\_12\_10\_22\_23.txt
+
+\}
+
+These results can be used to determine the quality and duration of the simulation as well as the location of the log files.
+
+\item{Ordered Log}
+
+The Ordered Log produces a human-readable summary of the simulation which includes the methods that were completed, the relationships that were activated, as well as a breakdown of what each agent did.
+\item{Sequential Log}
+
+The Sequential Log produces a detailed transcript of all the messages that were passed as well as the time methods and tasks were completed and the time relationships were activated.
+\end{itemize}
+
+
+
+
+
+\end{document}

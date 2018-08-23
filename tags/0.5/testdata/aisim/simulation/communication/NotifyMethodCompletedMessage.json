@@ -1,0 +1,1 @@
+{"MessageType":"NotifyMethodCompletedMessage","Message":{"MsgSender":"Agent1","MsgDest":"SIMULATOR","MethodName":"Method1","Quality":"1","Duration":"10"}}

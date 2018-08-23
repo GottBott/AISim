@@ -1,0 +1,947 @@
+;;;;
+;; Scenario from cookbook 20-Apr-2005
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent_Green)
+)
+
+(spec_agent
+  (label Agent_Red)
+)
+
+(spec_agent
+  (label Agent_Purple)
+)
+
+(spec_agent
+  (label Agent_Yellow)
+)
+
+; This agent group is made up to represent all four agents or a group of agents
+(spec_agent
+  (label Agent_Group)
+)
+
+(spec_task_group
+   (label Problem1)
+   (subtasks Window1 Window2 Window3 Window4)
+   (qaf q_min)
+)
+
+(spec_task
+   (label Window1)
+   (earliest_start_time 0)
+   (deadline 26)
+   (subtasks CTask1)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask1)
+   (subtasks Method1A Method1B Method1C Method1D Method1E Method1F)
+   (qaf q_max)
+)
+
+(spec_method
+   (label Method1A)
+   (agent Agent_Red)
+   (outcomes
+      (Method1A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 20 0.5 26 0.25 14 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method1B)
+   (agent Agent_Red)
+   (outcomes
+      (Method1B_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 19.0 0.25 13.0 0.25)
+         (duration_distribution 16 0.5 14 0.25 18 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method1C)
+   (agent Agent_Red)
+   (outcomes
+      (Method1C_o0
+         (density 1.0)
+         (quality_distribution 12.0 1.0)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method1D)
+   (agent Agent_Green)
+   (outcomes
+      (Method1D_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 20.0 0.25 12.0 0.25)
+         (duration_distribution 16 0.5 20 0.25 12 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method1E)
+   (agent Agent_Yellow)
+   (outcomes
+      (Method1E_o0
+         (density 1.0)
+         (quality_distribution 12.0 0.5 13.0 0.25 11.0 0.25)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method1F)
+   (agent Agent_Purple)
+   (outcomes
+      (Method1F_o0
+         (density 1.0)
+         (quality_distribution 8.0 1.0)
+         (duration_distribution 8 1.0)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_task
+   (label Window2)
+   (earliest_start_time 18)
+   (deadline 44)
+   (subtasks CTask2a CTask2b)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask2a)
+   (subtasks Method2aA Method2aB Method2aC)
+   (qaf q_max)
+)
+
+
+(spec_task
+   (label CTask2b)
+   (subtasks Method2bA Method2bB Method2bC Method2bD Method2bE)
+   (qaf q_max)
+)
+
+
+(spec_method
+   (label Method2aA)
+   (agent Agent_Red)
+   (outcomes
+      (Method2aA_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 25.0 0.25 15.0 0.25)
+         (duration_distribution 20 0.5 27 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2aB)
+   (agent Agent_Red)
+   (outcomes
+      (Method2aB_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 18.0 0.25 14.0 0.25)
+         (duration_distribution 16 0.5 19 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method2aC)
+   (agent Agent_Red)
+   (outcomes
+      (Method2aC_o0
+         (density 1.0)
+         (quality_distribution 12.0 0.5 14.0 0.25 10.0 0.25)
+         (duration_distribution 12 0.5 14 0.25 10 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2bA)
+   (agent Agent_Purple)
+   (outcomes
+      (Method2bA_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 24.0 0.25 16.0 0.25)
+         (duration_distribution 20 0.5 27 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2bB)
+   (agent Agent_Purple)
+   (outcomes
+      (Method2bB_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 18.0 0.25 14.0 0.25)
+         (duration_distribution 16 0.5 20 0.25 12 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method2bC)
+   (agent Agent_Purple)
+   (outcomes
+      (Method2bC_o0
+         (density 1.0)
+         (quality_distribution 12.0 0.5 13.0 0.25 11.0 0.25)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2bD)
+   (agent Agent_Red)
+   (outcomes
+      (Method2bD_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 19.0 0.25 13.0 0.25)
+         (duration_distribution 16 0.5 18 0.25 14 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2bE)
+   (agent Agent_Green)
+   (outcomes
+      (Method2bE_o0
+         (density 1.0)
+         (quality_distribution 12.0 0.5 14.0 0.25 10.0 0.25)
+         (duration_distribution 12 0.5 14 0.25 10 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_task
+   (label Window3)
+   (earliest_start_time 36)
+   (deadline 62)
+   (subtasks CTask3aS Syncl CTask3bS CTask3c)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask3aS)
+   (subtasks Setup3aA Setup3aB Setup3aC)
+   (qaf q_max)
+)
+
+
+
+(spec_method
+   (label Setup3aA)
+   (agent Agent_Red)
+   (outcomes
+      (Setup3aA_o0
+         (density 1.0)
+         (quality_distribution 10.0 0.5 13.0 0.25 7.0 0.25)
+         (duration_distribution 10 0.5 12 0.25 8 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Setup3aB)
+   (agent Agent_Red)
+   (outcomes
+      (Setup3aB_o0
+         (density 1.0)
+         (quality_distribution 8.0 1.0)
+         (duration_distribution 8 0.5 10 0.25 6 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Setup3aC)
+   (agent Agent_Red)
+   (outcomes
+      (Setup3aC_o0
+         (density 1.0)
+         (quality_distribution 6.0 0.5 9.0 0.25 3.0 0.25)
+         (duration_distribution 6 1.0)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_task
+   (label Syncl)
+   (subtasks CTask3aE CTask3bF)
+   (qaf q_sync_sum)
+)
+
+(spec_task
+   (label CTask3aE)
+   (subtasks Engage3aA Engage3aB Engage3aC)
+   (qaf q_max)
+)
+
+
+(spec_method
+   (label Engage3aA)
+   (agent Agent_Red)
+   (outcomes
+      (Engage3aA_o0
+         (density 1.0)
+         (quality_distribution 10.0 0.5 13.0 0.25 7.0 0.25)
+         (duration_distribution 10 0.5 13 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Engage3aB)
+   (agent Agent_Red)
+   (outcomes
+      (Engage3aB_o0
+         (density 1.0)
+         (quality_distribution 8.0 0.5 10.0 0.25 6.0 0.25)
+         (duration_distribution 8 0.5 10 0.25 6 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Engage3aC)
+   (agent Agent_Red)
+   (outcomes
+      (Engage3aC_o0
+         (density 1.0)
+         (quality_distribution 6.0 0.5 7.0 0.25 5.0 0.25)
+         (duration_distribution 6 1.0)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_task
+   (label CTask3bF)
+   (subtasks Engage3bA Engage3bB Engage3bC Engage3bD Engage3bE Engage3bF)
+   (qaf q_max)
+)
+
+
+(spec_method
+   (label Engage3bA)
+   (agent Agent_Purple)
+   (outcomes
+      (Engage3bA_o0
+         (density 1.0)
+         (quality_distribution 10.0 0.5 13.0 0.25 7.0 0.25)
+         (duration_distribution 10 0.5 13 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Engage3bB)
+   (agent Agent_Purple)
+   (outcomes
+      (Engage3bB_o0
+         (density 0.8)
+         (quality_distribution 8.0 0.5 11.0 0.25 5.0 0.25)
+         (duration_distribution 8 0.5 10 0.25 6 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+      (Engage3bB_o1
+         (density 0.2)
+         (quality_distribution 0.0 1.0)
+         (duration_distribution 8 0.5 10 0.25 6 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )	
+   )
+)
+
+(spec_method
+   (label Engage3bC)
+   (agent Agent_Purple)
+   (outcomes
+      (Engage3bC_o0
+         (density 1.0)
+         (quality_distribution 6.0 0.5 8.0 0.25 4.0 0.25)
+         (duration_distribution 6 1.0)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Engage3bD)
+   (agent Agent_Yellow)
+   (outcomes
+      (Engage3bD_o0
+         (density 1.0)
+         (quality_distribution 8.0 0.5 9.0 0.25 7.0 0.25)
+         (duration_distribution 8 0.5 5 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Engage3bE)
+   (agent Agent_Red)
+   (outcomes
+      (Engage3bE_o0
+         (density 1.0)
+         (quality_distribution 6.0 0.5 7.0 0.25 5.0 0.25)
+         (duration_distribution 6 0.5 7 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Engage3bF)
+   (agent Agent_Green)
+   (outcomes
+      (Engage3bF_o0
+         (density 1.0)
+         (quality_distribution 4.0 0.5 5.0 0.25 3.0 0.25)
+         (duration_distribution 4 0.5 5 0.25 3 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_task
+   (label CTask3bS)
+   (subtasks Setup3bA Setup3bB Setup3bC Setup3bD Setup3bE Setup3bF)
+   (qaf q_max)
+)
+
+
+(spec_method
+   (label Setup3bA)
+   (agent Agent_Purple)
+   (outcomes
+      (Setup3bA_o0
+         (density 1.0)
+         (quality_distribution 10.0 0.5 13.0 0.25 7.0 0.25)
+         (duration_distribution 10 0.5 13 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Setup3bB)
+   (agent Agent_Purple)
+   (outcomes
+      (Setup3bB_o0
+         (density 1.0)
+         (quality_distribution 8.0 1.0)
+         (duration_distribution 8 0.5 10 0.25 6 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Setup3bC)
+   (agent Agent_Purple)
+   (outcomes
+      (Setup3bC_o0
+         (density 1.0)
+         (quality_distribution 6.0 0.5 7.0 0.25 5.0 0.25)
+         (duration_distribution 6 0.5 7 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Setup3bD)
+   (agent Agent_Green)
+   (outcomes
+      (Setup3bD_o0
+         (density 1.0)
+         (quality_distribution 8.0 0.5 11.0 0.25 5.0 0.25)
+         (duration_distribution 8 0.5 9 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Setup3bE)
+   (agent Agent_Red)
+   (outcomes
+      (Setup3bE_o0
+         (density 1.0)
+         (quality_distribution 6.0 1.0)
+         (duration_distribution 6 1.0)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Setup3bF)
+   (agent Agent_Yellow)
+   (outcomes
+      (Setup3bF_o0
+         (density 1.0)
+         (quality_distribution 4.0 1.0)
+         (duration_distribution 4 0.5 5 0.25 3 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_task
+   (label CTask3c)
+   (earliest_start_time 0)
+   (deadline 26)
+   (subtasks Method3cA Method3cB Method3cC Method3cD)
+   (qaf q_max)
+)
+
+(spec_method
+   (label Method3cA)
+   (agent Agent_Yellow)
+   (outcomes
+      (Method3cA_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 20 0.5 25 0.25 15 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method3cB)
+   (agent Agent_Yellow)
+   (outcomes
+      (Method3cB_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 18.0 0.25 14.0 0.25)
+         (duration_distribution 16 0.5 19 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method3cC)
+   (agent Agent_Yellow)
+   (outcomes
+      (Method3cC_o0
+         (density 1.0)
+         (quality_distribution 12.0 0.5 14.0 0.25 10.0 0.25)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method3cD)
+   (agent Agent_Green)
+   (outcomes
+      (Method3cD_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 18.0 0.25 14.0 0.25)
+         (duration_distribution 16 0.5 19 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_task
+   (label Window4)
+   (earliest_start_time 54)
+   (deadline 80)
+   (subtasks CTask4a CTask4b)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask4a)
+   (subtasks Method4aA Method4aB Method4aC)
+   (qaf q_max)
+)
+
+
+(spec_task
+   (label CTask4b)
+   (subtasks Method4bA Method4bB Method4bC Method4bD)
+   (qaf q_max)
+)
+
+
+(spec_method
+   (label Method4aA)
+   (agent Agent_Green)
+   (outcomes
+      (Method4aA_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 20 0.5 25 0.25 15 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method4aB)
+   (agent Agent_Green)
+   (outcomes
+      (Method4aB_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 19.0 0.25 13.0 0.25)
+         (duration_distribution 16 0.5 18 0.25 14 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method4aC)
+   (agent Agent_Green)
+   (outcomes
+      (Method4aC_o0
+         (density 0.8)
+         (quality_distribution 12.0 0.5 14.0 0.25 10.0 0.25)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+      (Method4aC_o1
+         (density 0.2)
+         (quality_distribution 0.0 1.0)
+         (duration_distribution 12 0.5 13 0.25 11 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method4bA)
+   (agent Agent_Red)
+   (outcomes
+      (Method4bA_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 26.0 0.25 14.0 0.25)
+         (duration_distribution 20 0.5 27 0.25 13 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method4bB)
+   (agent Agent_Red)
+   (outcomes
+      (Method4bB_o0
+         (density 1.0)
+         (quality_distribution 16.0 0.5 18.0 0.25 14.0 0.25)
+         (duration_distribution 16 0.5 20 0.25 12 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+
+(spec_method
+   (label Method4bC)
+   (agent Agent_Red)
+   (outcomes
+      (Method4bC_o0
+         (density 1.0)
+         (quality_distribution 12.0 1.0)
+         (duration_distribution 12 0.5 14 0.25 10 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method4bD)
+   (agent Agent_Yellow)
+   (outcomes
+      (Method4bD_o0
+         (density 0.8)
+         (quality_distribution 16.0 0.5 19.0 0.25 13.0 0.25)
+         (duration_distribution 16 0.5 20 0.25 12 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+      (Method4bD_o1
+         (density 0.2)
+         (quality_distribution 0.0 1.0)
+         (duration_distribution 16 0.5 20 0.25 12 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )	
+   )
+)
+
+(spec_enables
+   (label enables1)
+   (from CTask1)
+   (to CTask2b)
+)
+
+(spec_enables
+   (label enables2)
+   (from CTask2b)
+   (to CTask3c)
+)
+
+(spec_enables
+   (label enables3)
+   (from CTask3c)
+   (to CTask4b)
+
+)
+
+(spec_enables
+   (label enables4)
+   (from CTask3aS)
+   (to Syncl)
+
+)
+
+(spec_enables
+   (label enables5)
+   (from CTask3bS)
+   (to Syncl)
+
+)
+
+(spec_facilitates
+   (label facilitates1)
+   (from CTask1)
+   (to Method3cB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates2)
+   (from CTask1)
+   (to Setup3aA)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates3)
+   (from CTask1)
+   (to Engage3bC)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates4)
+   (from Method1A)
+   (to Setup3aB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates5)
+   (from Method1B)
+   (to Syncl)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates6)
+   (from Method1B)
+   (to Method2bB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates7)
+   (from Method1B)
+   (to Method4bB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates8)
+   (from Method1C)
+   (to CTask2b)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates9)
+   (from Method1E)
+   (to Method2bD)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates10)
+   (from Method1E)
+   (to Engage3aA)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates11)
+   (from Method1F)
+   (to Engage3aB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates12)
+   (from Method1F)
+   (to Setup3bE)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates13)
+   (from CTask2a)
+   (to Engage3bE)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates14)
+   (from Method2bA)
+   (to Engage3bC)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates15)
+   (from Method2bD)
+   (to CTask3aS)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates16)
+   (from Method2bD)
+   (to Engage3aB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates17)
+   (from Method2bD)
+   (to Setup3bE)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates18)
+   (from Method2bE)
+   (to CTask3c)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates19)
+   (from Method2bE)
+   (to Engage3bD)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates20)
+   (from CTask3aE)
+   (to Method4bB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates21)
+   (from Engage3bE)
+   (to Method4bB)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates22)
+   (from Engage3bF)
+   (to Method4bD)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)
+
+(spec_facilitates
+   (label facilitates23)
+   (from Method3cB)
+   (to Method4aC)
+   (quality_power 0.5 1.0)
+   (duration_power 0.8 1.0)
+)

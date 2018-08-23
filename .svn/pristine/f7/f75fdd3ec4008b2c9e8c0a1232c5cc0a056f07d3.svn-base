@@ -1,0 +1,249 @@
+#!/usr/bin/python3
+import json
+import socket
+import time
+import sys
+from threading import Thread
+from multiprocessing import Pool
+import random
+
+class socket_reader(Thread):
+    socket = None
+    name = None
+    messages = []
+    recvthread = None
+    pool = None
+    def __init__(self, simulator_address, simulator_port, n):
+        Thread.__init__(self)
+        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+        self.socket.connect((simulator_address,simulator_port))
+        self.name = n
+
+    def close(self):
+        socket.close()
+        
+    def run(self):
+        while True:
+            line = ''
+            try:
+                char = self.socket.recv(1).decode("utf-8")
+            except:
+                char = ''
+            line += str(char)
+            while char != b'\n' and str(char) != b'' and char != '':
+                try:
+                    char = self.socket.recv(1)
+                    line += str(char.decode("utf-8"))
+                except :
+                    emptymessage = True
+            self.messages.append(json.loads(str(line)))
+        #self.run()
+    
+    def send(self, m):
+        self.socket.send(m)
+        print(m)
+        print("")
+
+    def getmessages(self):
+        tmp = self.messages
+        self.messages = []
+        return tmp
+
+
+
+class Agent:
+    simulator_address = ''
+    simulator_port = -1
+    name = ''
+    available_methods = []
+    unavailable_methods = []
+    requested_method = None
+    running_method = None
+    s = None
+    pool = None
+    seed = 0
+
+    def __init__(self, agent_name, sim_addr, port):
+        self.simulator_address = sim_addr
+        self.simulator_port = port
+        self.name = agent_name
+        self.start()
+        self.loop()
+
+    def start(self):
+        self.s = socket_reader(self.simulator_address, self.simulator_port, self.name)
+        self.s.start()
+        time.sleep(1)
+        self.register()
+
+    def register(self):
+        message = {"MsgSender":self.name,"MsgDest":"SIMULATOR"}
+        messagewrapping = {"MessageType":"AgentRegistrationMessage","Message":message}
+        self.s.send(bytes(json.dumps(messagewrapping)+"\n",))
+
+    def confirm_method_start_message(self, message):
+        self.running_method = self.requested_method
+        self.requested_method = None
+
+    def set_random_seed_message(self, message):
+        self.seed = int(message["Message"]["Seed"])
+        print("")
+        print("Random seed set to " + str(self.seed))
+        random.seed(self.seed)
+        print("")
+
+    def initial_tree_message(self, message):
+        for i in message["Message"]["Nodes"]:
+            if i['NodeType'] == 'Method' and i['AgentName'] == self.name:
+                self.unavailable_methods.append([i['NodeName'], (i['Duration']), (i['Quality'])])
+
+    def update_tree_message(self, message):
+        for i in message["Message"]["Nodes"]:
+            if i['NodeType'] == 'Method' and i['AgentName'] == self.name:
+                self.unavailable_methods.append([i['NodeName'], (i['Duration']), (i['Quality'])])
+
+        for m in self.unavailable_methods:
+            method = {}
+            method["MessageType"] = "AskMethodStatusMessage"
+            method["Message"] = {}
+            method["Message"]["MsgSender"] = self.name
+            method["Message"]["MsgDest"] = "SIMULATOR"
+            method["Message"]["MethodName"] = m[0]
+            self.s.send(bytes(json.dumps(method)+"\n"))                 
+
+    def notify_method_completed_message(self, message):
+        self.running_method = None      
+        print("Removing " + message['Message']['MethodName'] + " from avaiable Methods")
+        for i in range(len(self.available_methods)):
+            if self.available_methods[i][0] == message['Message']['MethodName']:
+                self.available_methods.pop(i)
+                break
+
+
+    def notify_method_status_message(self, message):
+        if message['Message']['Enabled']:
+            if not message['Message']['Completed']:
+                if not message['Message']['Started']:
+                    for i in range(len(self.unavailable_methods)):
+                        if self.unavailable_methods[i][0] == message['Message']['MethodName']:
+                            self.available_methods.append(self.unavailable_methods[i])
+                            self.unavailable_methods.pop(i)
+                            break
+
+    def notify_relationship_activation_message(self, message):
+        print("")
+
+
+    def start_simulation_message(self, message):
+        for m in self.unavailable_methods:
+            method = {}
+            method["MessageType"] = "AskMethodStatusMessage"
+            method["Message"] = {}
+            method["Message"]["MsgSender"] = self.name
+            method["Message"]["MsgDest"] = "SIMULATOR"
+            method["Message"]["MethodName"] = m[0]
+            self.s.send(bytes(json.dumps(method)+"\n"))
+            
+
+    def end_simulation_message(self, message):
+        print("End of Simulation")
+        self.s.close(self)
+        sys.exit(0)
+
+    def next_tick_message(self, message):
+        print("")
+
+
+    def agent_to_agent_message(self, message):
+        print("")
+
+    def ask_to_start_method(self, method):
+
+        message = {}
+        message['MessageType'] = 'StartMethodMessage'
+        message['Message'] = {}
+        message['Message']['MsgSender'] = self.name
+        message['Message']['MsgDest'] = 'SIMULATOR'
+        message['Message']['MethodName'] = method
+        self.s.send(bytes(json.dumps(message)+"\n"))
+        self.requested_method = method
+
+    def eval_quality_distrubution(self, dist):
+        value =0       
+        x= ''.join(x for x in dist if x not in '()')
+        y= x.split(",")
+        i=0
+        while i < len(y)-1:
+            value += float(y[i])*float(y[i+1])
+            i +=2
+        return value
+
+    def loop(self):
+        line = ''
+        n = 0
+        while True:
+            mess = self.s.getmessages()
+            for message in mess:
+                if message["MessageType"] == "ConfirmMethodStartMessage":
+                    print(message)
+                    print("")
+                    self.confirm_method_start_message(message)
+
+                elif message["MessageType"] == "SetRandomSeedMessage":
+                    print(message)
+                    print("")
+                    self.set_random_seed_message(message)
+
+                elif message["MessageType"] == "InitialTreeMessage":
+                    print(message)
+                    print("")
+                    self.initial_tree_message(message)
+
+                elif message["MessageType"] == "UpdateTreeMessage":
+                    print(message)
+                    print("")
+                    self.update_tree_message(message)
+
+                elif message["MessageType"] == "NotifyMethodCompletedMessage":
+                    print(message)
+                    print("")
+                    self.notify_method_completed_message(message)
+
+                elif message["MessageType"] == "NotifyMethodStatusMessage":
+                    print(message)
+                    print("")
+                    self.notify_method_status_message(message)
+
+                elif message["MessageType"] == "NotifyRelationshipActivationMessage":
+                    print(message)
+                    print("")
+                    self.notify_relationship_activation_message(message)
+
+                elif message["MessageType"] == "StartSimulationMessage":
+                    print(message)
+                    print("")
+                    self.start_simulation_message(message)
+
+                elif message["MessageType"] == "EndSimulationMessage":
+                    print(message)
+                    print("")
+                    self.end_simulation_message(message)
+
+                elif message["MessageType"] == "NextTickMessage":
+                    print(message)
+                    print("")
+                    self.next_tick_message(message)
+
+                elif message["MessageType"] == "AgentToAgentMessage":
+                    print(message)
+                    print("")
+                    self.agent_to_agent_message(message)
+
+                else:
+                    print(message)
+                    print("")
+
+
+
+
+    

@@ -1,0 +1,12 @@
+CISC 475 Project
+Multi-Agent System Simulation
+Fall 2014
+
+Our project builds with ANT on the server however there is no overall main method linking our modules together.
+Some Modules that can be run individually include:
+
+ServerListenThread.java
+InputParser.java
+Message.java
+
+

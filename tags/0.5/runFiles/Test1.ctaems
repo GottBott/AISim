@@ -1,0 +1,43 @@
+;;;;
+;; Scenario from cookbook 20-Apr-2005
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent1)
+)
+
+
+(spec_task_group
+   (label Problem1)
+   (subtasks Window1)
+   (qaf q_or)
+)
+
+(spec_task
+   (label Window1)
+   (earliest_start_time 0)
+   (deadline 26)
+   (subtasks CTask1)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask1)
+   (subtasks Method1)
+   (qaf q_and)
+)
+
+(spec_method
+   (label Method1)
+   (agent Agent1)
+   (outcomes
+      (Method1A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 20 0.5 26 0.25 14 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)

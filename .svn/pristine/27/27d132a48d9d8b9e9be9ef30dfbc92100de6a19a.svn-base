@@ -1,0 +1,32 @@
+\label{chapter:introduction} %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+As technology advances, software is fast becoming the most economical way to test complex solutions to real world problems. Software testing allows a user to run unlimited iterations with complete control over environment variables. Our Multi-Agent System Simulator (MASS) will provide an environment for Dr. Decker and other researchers to test software Agents allowing them to design more accurate solutions to real world problems faster than ever before.
+
+\section{Document Purpose}
+
+The purpose of this Software Requirements Specification (SRS) is to serve as a statement of understanding between the users of the proposed product and the software developers of the product. The Software Requirements Specification is defined using a subset of the Unified Modeling Language (UML), an Entity-Relationship Diagram (ERD) describing all of the objects/entities along with their attributes, relations, and Data Flow Diagram (DFD).
+
+\section{Scope}
+
+We will develop a general-purpose command line program called Multi-Agent System Simulator (MASS). The MASS will take a Simulation File Input (SFI) and a Configuration File Input (CFI) to produce an environment in which user defined software Agents can connect and interact to solve problems. Upon completion the MASS will output the results of the problem Simulation as well as produce a Log File Output (LFO) detailing the events that occurred within the Simulation. The SFI will be a cTAEMS file describing the problem domain that the MASS will use to construct the Simulation environment. The CFI will be a plain text file that contains settings relating to the execution of the MASS but are independent of a given SFI. Agents, which are independent user-defined programs, will connect to the MASS through TCP socket connections before a simulation begins. While running, the MASS allows inter-Agent communication and logs statistics such as the number of messages sent by each Agent. Upon completion the MASS will output the results of the simulation in terms of Quality and Duration. It is important to note that the MASS does not restrict the design of the Agents themselves but requires them to adhere to a connection interface so that communication is possible.
+
+
+\section{Acronyms and Abbreviations}
+
+This section contains definitions of acronyms and abbreviations used in this document.
+
+\begin{itemize}
+\item{\textbf{MASS}: Multi-Agent System Simulator}
+\item{\textbf{SFI}: Simulation File Input}
+\item{\textbf{CFI}: Configuration File Input}
+\item{\textbf{LFO}: Log File Output}
+
+\item{\textbf{UML}: Unified Modeling Language}
+\item{\textbf{DFD}: Data Flow Diagram}
+\item{\textbf{TCP:} Transmission Control Protocol}
+\item{\textbf{JSON}: JavaScript Object Notation}
+\item{\textbf{SRS}: Software Requirements Specification}
+\item{\textbf{ERD}: Entity-Relationship Diagram}
+\item{\textbf{QAF}: Quality Accumulation Function}
+\end{itemize}

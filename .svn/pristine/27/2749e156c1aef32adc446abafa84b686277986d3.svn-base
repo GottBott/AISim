@@ -1,0 +1,48 @@
+% !TEX root =  thesis.tex
+
+\thispagestyle{empty}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}
+
+\vspace*{\fill}
+\noindent\rule{13cm}{2pt}\\[0.5cm]
+{\huge \bf Multi-Agent System Simulator}
+\noindent\rule{13cm}{2pt}\\[1cm]
+\vspace*{\fill}
+\par CISC475/675 Fall 2014 Team 6 \\
+         Boch Mike \\ 
+         Gotthold Benjamin \\ 
+         Noyes Steven \\ 
+         Sharma Varun \\
+         Zimmerman Stefan \\
+
+
+
+
+
+
+\vfill
+
+% Bottom of the page
+\date{\today}
+
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+{Preliminaries}
+
+
+\paragraph{Change Log}
+\begin{itemize}
+\item 10/03/1014 - Sprint 2: Implementation Details v0.2
+\item 09/19/2014 - Sprint 1: Initial Document Release v0.1
+\end{itemize}
+
+
+\paragraph{Team Information  \\ \\} 
+
+This project, including the content of this document, have been designed by University of Delaware students Boch Mike ,Ben Gotthold, Noyes Steven, Sharma Varun, and Zimmerman Stefan. To view the current release of this project please visit our project page at \color{black}\url{http://cisc475-6.cis.udel.edu.}

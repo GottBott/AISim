@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="73cm" height="39cm" viewBox="-288 -90 1448 761" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="80.527" y="-88.5878" width="472" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80.527" y="-88.5878" width="472" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="316.527" y="-68.5878">Node</text>
+    <rect style="fill: #ffffff" x="80.527" y="-60.5878" width="472" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80.527" y="-60.5878" width="472" height="196"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="-47.3878">#parent: Task</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="-31.3878">#name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="-15.3878">#quality: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="0.6122">#enabled: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="16.6122">#finished: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="32.6122">#earliestStartTime: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="48.6122">#deadline: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="64.6122">#relationships: ArrayList&lt;NodeRelationship&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="80.6122">#visibleToAgents: HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="96.6122">#agentsBelow: HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="112.612">#arrived: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="128.612">#arrivalTime: long</text>
+    <rect style="fill: #ffffff" x="80.527" y="135.412" width="472" height="164"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="80.527" y="135.412" width="472" height="164"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="148.612">+findVisibleToAgents(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="164.612">-findAgentsBelow(): HashSet&lt;String&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="180.612">-findVisibleToAgentsFromRelationships(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="196.612">+addRelationship(relationship:NodeRelationship): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="212.612">+activateRelationships(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="228.612">+enable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="244.612">+disable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="260.612">+faciliate(double:qualityFactor,double:durationFactor): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="276.612">+hinder(qualityFactor:double,durationFactor:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="83.527" y="292.612">+computeEarliestStartAndDeadline(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-278.658" y="345.522" width="472" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.658" y="345.522" width="472" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-42.658" y="365.522">Task</text>
+    <rect style="fill: #ffffff" x="-278.658" y="373.522" width="472" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.658" y="373.522" width="472" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="386.722">-subTasks: ArrayList&lt;Node&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="402.722">-qaf: QAF</text>
+    <rect style="fill: #ffffff" x="-278.658" y="409.522" width="472" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.658" y="409.522" width="472" height="132"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="422.722">+addSubTask(s:Node): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="438.722">+enable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="454.722">+disable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="470.722">+faciliate(qualityFactor:double,durationFactor:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="486.722">+hinder(qualityFactor:double,durationFactor:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="502.722">+computerEarliestStartAndDeadline(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="518.722">+checkIsFinished(): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.658" y="534.722">+calculateQualityFromChildren(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="54.2192" y="549.644" width="140.9" height="44"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="54.2192" y="549.644" width="140.9" height="44"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="124.669" y="564.844">&lt;&lt;enum&gt;&gt;</text>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="124.669" y="585.644">QAF</text>
+    <rect style="fill: #ffffff" x="54.2192" y="593.644" width="140.9" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="54.2192" y="593.644" width="140.9" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="57.2192" y="606.844">+NOT_SET: int = 0</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="57.2192" y="622.844">+AND: int = 1</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="57.2192" y="638.844">+OR: int = 2</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="57.2192" y="654.844">+SUM: int = 3</text>
+    <rect style="fill: #ffffff" x="54.2192" y="661.644" width="140.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="54.2192" y="661.644" width="140.9" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="53.2105,609.644 -42.658,609.644 -42.658,548.227 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-37.658,560.875 -42.658,544.875 -47.658,560.875 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="5.27624" y="605.644">inner class</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="203.588" y="345.218" width="472" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.588" y="345.218" width="472" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="439.588" y="365.218">Method</text>
+    <rect style="fill: #ffffff" x="203.588" y="373.218" width="472" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.588" y="373.218" width="472" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="386.418">-agent: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="402.418">-duration: long</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="418.418">-isStarted: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="434.418">-startTime: long</text>
+    <rect style="fill: #ffffff" x="203.588" y="441.218" width="472" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="203.588" y="441.218" width="472" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="454.418">+enable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="470.418">+disable(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="486.418">+faciliate(qualityFactor:double,durationFactor:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="502.418">+hinder(qualityFactor:double,durationFactor:double): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="518.418">+computeEarliestStartAndDeadline(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="206.588" y="534.418">+start(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="725.856" y="-31.0336" width="152.4" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="725.856" y="-31.0336" width="152.4" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="802.056" y="-11.0336">NodeRelationship</text>
+    <rect style="fill: #ffffff" x="725.856" y="-3.0336" width="152.4" height="100"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="725.856" y="-3.0336" width="152.4" height="100"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="10.1664">#fromNode: Node</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="26.1664">#toNode: Node</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="42.1664">#name: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="58.1664">#type: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="74.1664">#arrived: boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="90.1664">#arrivalTime: long</text>
+    <rect style="fill: #ffffff" x="725.856" y="96.9664" width="152.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="725.856" y="96.9664" width="152.4" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="728.856" y="110.166">+evaluate(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="939.404" y="205.14" width="219.9" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="939.404" y="205.14" width="219.9" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1049.35" y="225.14">DisablesNodeRelationship</text>
+    <rect style="fill: #ffffff" x="939.404" y="233.14" width="219.9" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="939.404" y="233.14" width="219.9" height="8"/>
+    <rect style="fill: #ffffff" x="939.404" y="241.14" width="219.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="939.404" y="241.14" width="219.9" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="942.404" y="254.34">+evaluate(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="820.61" y="271.608" width="214.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820.61" y="271.608" width="214.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="928.01" y="291.608">EnablesNodeRelationship</text>
+    <rect style="fill: #ffffff" x="820.61" y="299.608" width="214.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820.61" y="299.608" width="214.8" height="8"/>
+    <rect style="fill: #ffffff" x="820.61" y="307.608" width="214.8" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="820.61" y="307.608" width="214.8" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="823.61" y="320.808">+evaluate(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="684.844" y="336.662" width="234.95" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="684.844" y="336.662" width="234.95" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="802.319" y="356.662">FacilitatesNodeRelationship</text>
+    <rect style="fill: #ffffff" x="684.844" y="364.662" width="234.95" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="684.844" y="364.662" width="234.95" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="687.844" y="377.862">-qualityFactor: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="687.844" y="393.862">-durationFactor: double</text>
+    <rect style="fill: #ffffff" x="684.844" y="400.662" width="234.95" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="684.844" y="400.662" width="234.95" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="687.844" y="413.862">+evaluate(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="573.98" y="241.496" width="214.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.98" y="241.496" width="214.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="681.23" y="261.496">HindersNodeRelationship</text>
+    <rect style="fill: #ffffff" x="573.98" y="269.496" width="214.5" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.98" y="269.496" width="214.5" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="576.98" y="282.696">-qualityFactor: double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="576.98" y="298.696">-durationFactor: double</text>
+    <rect style="fill: #ffffff" x="573.98" y="305.496" width="214.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="573.98" y="305.496" width="214.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="576.98" y="318.696">+evaluate(): void</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-194.039" y="-52.791" width="264.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-194.039" y="-52.791" width="264.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-61.9888" y="-32.791">Distribution</text>
+    <rect style="fill: #ffffff" x="-194.039" y="-24.791" width="264.1" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-194.039" y="-24.791" width="264.1" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-191.039" y="-11.591">-values: ArrayList&lt;Double&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-191.039" y="4.409">-probabilities: ArrayList&lt;Double&gt;</text>
+    <rect style="fill: #ffffff" x="-194.039" y="11.209" width="264.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-194.039" y="11.209" width="264.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-191.039" y="24.409">+evaluate(double:num): double</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-278.892" y="40.204" width="348.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.892" y="40.204" width="348.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-104.492" y="60.204">TaskTree</text>
+    <rect style="fill: #ffffff" x="-278.892" y="68.204" width="348.8" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.892" y="68.204" width="348.8" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="81.404">-head: Task</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="97.404">-nameToNodeMap: HashMap&lt;String, Node&gt;</text>
+    <rect style="fill: #ffffff" x="-278.892" y="104.204" width="348.8" height="196"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-278.892" y="104.204" width="348.8" height="196"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="117.404">-buildMap(node:Node): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="133.404">+newHead(Task:task): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="149.404">+addNode(node:Node,parentName:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="165.404">+getNodeWithName(String:name): Node</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="181.404">+getTotalQuality(): double</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="197.404">+isFinished(long:tick): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="213.404">+findVisibleToAgents(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="229.404">+activateAllRelationships(): HashMap&lt;String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="245.404">                           HashSet&lt;String&gt;&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="261.404">+computeEarliestStartAndDeadline(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="277.404">+findArrivals(tick:long): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-275.892" y="293.404">-findArrivals(node:Node,tick:long): boolean</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="316.527,318.654 316.527,330.315 439.588,330.315 439.588,344.212 "/>
+    <polygon style="fill: #ffffff" points="324.527,318.654 316.527,302.654 308.527,318.654 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="324.527,318.654 316.527,302.654 308.527,318.654 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="316.527,318.654 316.527,330.467 -42.658,330.467 -42.658,344.516 "/>
+    <polygon style="fill: #ffffff" points="324.527,318.654 316.527,302.654 308.527,318.654 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="324.527,318.654 316.527,302.654 308.527,318.654 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="802.056,135.202 802.056,168.55 1049.35,168.55 1049.35,204.133 "/>
+    <polygon style="fill: #ffffff" points="810.056,135.202 802.056,119.202 794.056,135.202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="810.056,135.202 802.056,119.202 794.056,135.202 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="802.056,136.212 802.056,202.288 928.01,202.288 928.01,270.601 "/>
+    <polygon style="fill: #ffffff" points="810.056,136.212 802.056,120.212 794.056,136.212 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="810.056,136.212 802.056,120.212 794.056,136.212 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="802.056,136.212 802.056,234.816 802.319,234.816 802.319,335.657 "/>
+    <polygon style="fill: #ffffff" points="810.056,136.212 802.056,120.212 794.056,136.212 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="810.056,136.212 802.056,120.212 794.056,136.212 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="802.056,135.202 802.056,186.729 681.23,186.729 681.23,240.491 "/>
+    <polygon style="fill: #ffffff" points="810.056,135.202 802.056,119.202 794.056,135.202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="810.056,135.202 802.056,119.202 794.056,135.202 "/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="577.699,61.4122 645.687,61.4122 645.687,42.9664 724.847,42.9664 "/>
+    <polygon style="fill: #ffffff" points="552.527,61.4122 566.527,56.6122 580.527,61.4122 566.527,66.2122 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="552.527,61.4122 566.527,56.6122 580.527,61.4122 566.527,66.2122 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="647.687" y="48.1893"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="584.527" y="57.4122"></text>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="720.847" y="38.9664"></text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="725.856,-17.0336 643.192,-17.0336 643.192,-18.5878 559.232,-18.5878 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="571.88,-23.5878 555.88,-18.5878 571.88,-13.5878 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="645.192" y="-21.8107">uses</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="-104.492,301.212 -104.492,319.367 -278.658,319.367 -278.658,338.817 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-283.658,326.169 -278.658,342.169 -273.658,326.169 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="-191.575" y="315.367">uses</text>
+  </g>
+</svg>

@@ -1,0 +1,160 @@
+;;;;
+;; Scenario from cookbook 20-Apr-2005
+;;;;
+
+(spec_version "V2_0")
+
+(spec_agent
+  (label Agent_Green)
+)
+
+
+(spec_task_group
+   (label Problem1)
+   (subtasks Window1)
+   (qaf q_and)
+)
+
+(spec_task
+   (label Window1)
+   (earliest_start_time 0)
+   (deadline 50000)
+   (subtasks CTask1 Method3 Method5 Method7 Method9)
+   (qaf q_sum)
+)
+
+(spec_task
+   (label CTask1)
+   (subtasks Method1 Method2 Method4 Method6 Method8)
+   (qaf q_or)
+)
+
+(spec_method
+   (label Method1)
+   (agent Agent_Green)
+   (outcomes
+      (Method1A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 113.0 0.25)
+         (duration_distribution 5 0.5 3 0.25 9 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method2)
+   (agent Agent_Green)
+   (outcomes
+      (Method2A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 120.0 0.25 13.0 0.25)
+         (duration_distribution 6 0.5 4 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method3)
+   (agent Agent_Green)
+   (outcomes
+      (Method3A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method4)
+   (agent Agent_Green)
+   (outcomes
+      (Method2A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 4 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method5)
+   (agent Agent_Green)
+   (outcomes
+      (Method3A_o0
+         (density 1.0)
+         (quality_distribution 20.0 0.5 27.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+(spec_method
+   (label Method6)
+   (agent Agent_Green)
+   (outcomes
+      (Method2A_o0
+         (density 1.0)
+         (quality_distribution 200.0 0.5 270.0 0.25 130.0 0.25)
+         (duration_distribution 6 0.5 4 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method7)
+   (agent Agent_Green)
+   (outcomes
+      (Method3A_o0
+         (density 1.0)
+         (quality_distribution 2.0 0.5 5.0 0.25 13.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method8)
+   (agent Agent_Green)
+   (outcomes
+      (Method2A_o0
+         (density 1.0)
+         (quality_distribution 500.0 0.5 2.0 0.25 13.0 0.25)
+         (duration_distribution 8 0.5 4 0.25 7 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_method
+   (label Method9)
+   (agent Agent_Green)
+   (outcomes
+      (Method3A_o0
+         (density 1.0)
+         (quality_distribution 50.0 0.5 13.0 0.25 10.0 0.25)
+         (duration_distribution 4 0.5 3 0.25 5 0.25)
+         ;;(cost_distribution 10.0 1.0)
+      )
+   )
+)
+
+(spec_disables
+   (label disables1)
+   (from Method9)
+   (to Method8)
+
+)
+
+(spec_disables
+   (label disables2)
+   (from Method6)
+   (to Method7)
+
+)

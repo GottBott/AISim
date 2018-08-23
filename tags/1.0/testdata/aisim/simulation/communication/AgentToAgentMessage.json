@@ -1,0 +1,13 @@
+{
+	"MessageType":"AgentToAgentMessage",
+	"Message":
+	{
+		"MsgSender":"Agent1",
+		"MsgDest":"Agent2",
+		"Content":
+		{
+			"Content1":1,
+			"Content2":2
+		}
+	}
+}

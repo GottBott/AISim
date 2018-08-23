@@ -1,0 +1,15 @@
+\chapter{Other non-functional requirements}\label{chapter:otherFunctionalRequirements}
+
+\section{Performance requirements}
+
+All Agents involved with the model are connected to the simulator using sockets. The Agents themselves are independent processes, which could run on physically different machines. Note that the simulator does not control the Agents' activities, it merely allocates time slices and records the Events performed by the Agent during the time slice. This makes the performance of the MASS independent of an Agent's performance. The system shall function in real-time, however, the effect of network load or maximum limit on socket connections can only be published after testing.
+
+\section{Maintainability}
+
+The standardized design and implementation documents will be provided in order to maintain the system. All changes will be documented. A standard architecture will be applied and therefore allowing for quick evolution of the software to adapt to possible situations in the future. 
+
+\section{Software Quality Attributes}
+
+The user interface of the Multi-Agent System Simulator is to be designed with usability as the first priority. The system will be presented and organized in a manner that is both visually appealing and easy for the user to navigate. To ensure reliability and correctness, there will be zero tolerance for errors in the Simulation environment. 
+
+
